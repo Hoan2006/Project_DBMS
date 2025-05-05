@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -46,14 +46,68 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAccount.Designer.cs">
+      <DependentUpon>fAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fBook.Designer.cs">
+      <DependentUpon>fBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fCoupon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCoupon.Designer.cs">
+      <DependentUpon>fCoupon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fHome.Designer.cs">
+      <DependentUpon>fHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="fSearchAccountUtil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fSearchAccountUtil.Designer.cs">
+      <DependentUpon>fSearchAccountUtil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fStatistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fStatistic.Designer.cs">
+      <DependentUpon>fStatistic.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fAccount.resx">
+      <DependentUpon>fAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fBook.resx">
+      <DependentUpon>fBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fCoupon.resx">
+      <DependentUpon>fCoupon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fHome.resx">
+      <DependentUpon>fHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fSearchAccountUtil.resx">
+      <DependentUpon>fSearchAccountUtil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fStatistic.resx">
+      <DependentUpon>fStatistic.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -77,11 +131,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\DAO\DAO.csproj">
+    <ProjectReference Include="..\DAO\DAO.csproj">
       <Project>{c2a946d7-ebd0-41dd-a123-78fecbe0c439}</Project>
       <Name>DAO</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\DTO\DTO.csproj">
+    <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{a354c275-94a4-4d7a-bddc-b274f84d639f}</Project>
       <Name>DTO</Name>
     </ProjectReference>
