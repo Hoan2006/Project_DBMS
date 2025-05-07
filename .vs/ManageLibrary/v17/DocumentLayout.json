@@ -3,24 +3,40 @@
   "WorkspaceRootPath": "D:\\GitHub\\Project_DBMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|d:\\github\\project_dbms\\managelibrary\\gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|solutionrelative:managelibrary\\gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|D:\\GitHub\\Project_DBMS\\managelibrary\\gui\\fbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|solutionrelative:managelibrary\\gui\\fbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|D:\\GitHub\\Project_DBMS\\managelibrary\\gui\\faccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|solutionrelative:managelibrary\\gui\\faccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|D:\\GitHub\\Project_DBMS\\managelibrary\\gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|solutionrelative:managelibrary\\gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|D:\\GitHub\\Project_DBMS\\managelibrary\\gui\\fcoupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|solutionrelative:managelibrary\\gui\\fcoupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C2A946D7-EBD0-41DD-A123-78FECBE0C439}|ManageLibrary\\DAO\\DAO.csproj|D:\\GitHub\\Project_DBMS\\managelibrary\\dao\\tacgiadao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2A946D7-EBD0-41DD-A123-78FECBE0C439}|ManageLibrary\\DAO\\DAO.csproj|solutionrelative:managelibrary\\dao\\tacgiadao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|D:\\GitHub\\Project_DBMS\\managelibrary\\gui\\fhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|solutionrelative:managelibrary\\gui\\fhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C2A946D7-EBD0-41DD-A123-78FECBE0C439}|ManageLibrary\\DAO\\DAO.csproj|D:\\GitHub\\Project_DBMS\\managelibrary\\dao\\sachdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2A946D7-EBD0-41DD-A123-78FECBE0C439}|ManageLibrary\\DAO\\DAO.csproj|solutionrelative:managelibrary\\dao\\sachdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|d:\\github\\project_dbms\\managelibrary\\gui\\fbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|solutionrelative:managelibrary\\gui\\fbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2A946D7-EBD0-41DD-A123-78FECBE0C439}|ManageLibrary\\DAO\\DAO.csproj|D:\\GitHub\\Project_DBMS\\managelibrary\\dao\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2A946D7-EBD0-41DD-A123-78FECBE0C439}|ManageLibrary\\DAO\\DAO.csproj|solutionrelative:managelibrary\\dao\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2A946D7-EBD0-41DD-A123-78FECBE0C439}|ManageLibrary\\DAO\\DAO.csproj|D:\\GitHub\\Project_DBMS\\managelibrary\\dao\\nhaxuatbandao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2A946D7-EBD0-41DD-A123-78FECBE0C439}|ManageLibrary\\DAO\\DAO.csproj|solutionrelative:managelibrary\\dao\\nhaxuatbandao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2A946D7-EBD0-41DD-A123-78FECBE0C439}|ManageLibrary\\DAO\\DAO.csproj|D:\\GitHub\\Project_DBMS\\managelibrary\\dao\\theloaidao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2A946D7-EBD0-41DD-A123-78FECBE0C439}|ManageLibrary\\DAO\\DAO.csproj|solutionrelative:managelibrary\\dao\\theloaidao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|D:\\GitHub\\Project_DBMS\\managelibrary\\gui\\fstatistic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|solutionrelative:managelibrary\\gui\\fstatistic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|D:\\GitHub\\Project_DBMS\\managelibrary\\gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -31,24 +47,28 @@
       "RelativeMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|solutionrelative:managelibrary\\gui\\fsearchaccountutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|D:\\GitHub\\Project_DBMS\\managelibrary\\gui\\fstatistic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|solutionrelative:managelibrary\\gui\\fstatistic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|D:\\GitHub\\Project_DBMS\\managelibrary\\gui\\fcoupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|solutionrelative:managelibrary\\gui\\fcoupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A354C275-94A4-4D7A-BDDC-B274F84D639F}|ManageLibrary\\DTO\\DTO.csproj|D:\\GitHub\\Project_DBMS\\managelibrary\\dto\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A354C275-94A4-4D7A-BDDC-B274F84D639F}|ManageLibrary\\DTO\\DTO.csproj|solutionrelative:managelibrary\\dto\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A354C275-94A4-4D7A-BDDC-B274F84D639F}|ManageLibrary\\DTO\\DTO.csproj|D:\\GitHub\\Project_DBMS\\managelibrary\\dto\\theloai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A354C275-94A4-4D7A-BDDC-B274F84D639F}|ManageLibrary\\DTO\\DTO.csproj|solutionrelative:managelibrary\\dto\\theloai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2A946D7-EBD0-41DD-A123-78FECBE0C439}|ManageLibrary\\DAO\\DAO.csproj|D:\\GitHub\\Project_DBMS\\managelibrary\\dao\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2A946D7-EBD0-41DD-A123-78FECBE0C439}|ManageLibrary\\DAO\\DAO.csproj|solutionrelative:managelibrary\\dao\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A354C275-94A4-4D7A-BDDC-B274F84D639F}|ManageLibrary\\DTO\\DTO.csproj|D:\\GitHub\\Project_DBMS\\managelibrary\\dto\\nhaxuatban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A354C275-94A4-4D7A-BDDC-B274F84D639F}|ManageLibrary\\DTO\\DTO.csproj|solutionrelative:managelibrary\\dto\\nhaxuatban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A354C275-94A4-4D7A-BDDC-B274F84D639F}|ManageLibrary\\DTO\\DTO.csproj|D:\\GitHub\\Project_DBMS\\managelibrary\\dto\\tacgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A354C275-94A4-4D7A-BDDC-B274F84D639F}|ManageLibrary\\DTO\\DTO.csproj|solutionrelative:managelibrary\\dto\\tacgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|D:\\GitHub\\Project_DBMS\\managelibrary\\gui\\faccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|solutionrelative:managelibrary\\gui\\faccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|D:\\GitHub\\Project_DBMS\\managelibrary\\gui\\fstatistic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|solutionrelative:managelibrary\\gui\\fstatistic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|D:\\GitHub\\Project_DBMS\\managelibrary\\gui\\fbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|solutionrelative:managelibrary\\gui\\fbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,86 +94,110 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\GUI\\Form1.cs",
-              "RelativeDocumentMoniker": "ManageLibrary\\GUI\\Form1.cs",
-              "ToolTip": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\GUI\\Form1.cs [Design]",
-              "RelativeToolTip": "ManageLibrary\\GUI\\Form1.cs [Design]",
+              "DocumentIndex": 4,
+              "Title": "fBook.cs",
+              "DocumentMoniker": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\GUI\\fBook.cs",
+              "RelativeDocumentMoniker": "ManageLibrary\\GUI\\fBook.cs",
+              "ToolTip": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\GUI\\fBook.cs",
+              "RelativeToolTip": "ManageLibrary\\GUI\\fBook.cs",
+              "ViewState": "AQIAAGMCAAAAAAAAAAAAAFQCAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T09:35:39.639Z"
+              "WhenOpened": "2025-05-05T09:56:41.422Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "fCoupon.cs [Design]",
-              "DocumentMoniker": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\GUI\\fCoupon.cs",
-              "RelativeDocumentMoniker": "ManageLibrary\\GUI\\fCoupon.cs",
-              "ToolTip": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\GUI\\fCoupon.cs [Design]",
-              "RelativeToolTip": "ManageLibrary\\GUI\\fCoupon.cs [Design]",
+              "Title": "SachDAO.cs",
+              "DocumentMoniker": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\DAO\\SachDAO.cs",
+              "RelativeDocumentMoniker": "ManageLibrary\\DAO\\SachDAO.cs",
+              "ToolTip": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\DAO\\SachDAO.cs",
+              "RelativeToolTip": "ManageLibrary\\DAO\\SachDAO.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAI4AAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T10:03:56.481Z"
+              "WhenOpened": "2025-05-05T11:07:20.042Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "TacGiaDAO.cs",
+              "DocumentMoniker": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\DAO\\TacGiaDAO.cs",
+              "RelativeDocumentMoniker": "ManageLibrary\\DAO\\TacGiaDAO.cs",
+              "ToolTip": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\DAO\\TacGiaDAO.cs",
+              "RelativeToolTip": "ManageLibrary\\DAO\\TacGiaDAO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T11:21:07.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NhaXuatBanDAO.cs",
+              "DocumentMoniker": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\DAO\\NhaXuatBanDAO.cs",
+              "RelativeDocumentMoniker": "ManageLibrary\\DAO\\NhaXuatBanDAO.cs",
+              "ToolTip": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\DAO\\NhaXuatBanDAO.cs",
+              "RelativeToolTip": "ManageLibrary\\DAO\\NhaXuatBanDAO.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T11:18:19.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DataProvider.cs",
+              "DocumentMoniker": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\DAO\\DataProvider.cs",
+              "RelativeDocumentMoniker": "ManageLibrary\\DAO\\DataProvider.cs",
+              "ToolTip": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\DAO\\DataProvider.cs",
+              "RelativeToolTip": "ManageLibrary\\DAO\\DataProvider.cs",
+              "ViewState": "AQIAAGkAAAAAAAAAAAApwEoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T11:08:38.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "fBook.cs [Design]",
               "DocumentMoniker": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\GUI\\fBook.cs",
               "RelativeDocumentMoniker": "ManageLibrary\\GUI\\fBook.cs",
               "ToolTip": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\GUI\\fBook.cs [Design]",
               "RelativeToolTip": "ManageLibrary\\GUI\\fBook.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T09:53:07.751Z"
+              "WhenOpened": "2025-05-05T09:53:07.751Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "fAccount.cs [Design]",
-              "DocumentMoniker": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\GUI\\fAccount.cs",
-              "RelativeDocumentMoniker": "ManageLibrary\\GUI\\fAccount.cs",
-              "ToolTip": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\GUI\\fAccount.cs [Design]",
-              "RelativeToolTip": "ManageLibrary\\GUI\\fAccount.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T09:51:18.27Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\GUI\\Program.cs",
               "RelativeDocumentMoniker": "ManageLibrary\\GUI\\Program.cs",
               "ToolTip": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\GUI\\Program.cs",
               "RelativeToolTip": "ManageLibrary\\GUI\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAlAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T09:35:41.416Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "fHome.cs [Design]",
-              "DocumentMoniker": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\GUI\\fHome.cs",
-              "RelativeDocumentMoniker": "ManageLibrary\\GUI\\fHome.cs",
-              "ToolTip": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\GUI\\fHome.cs [Design]",
-              "RelativeToolTip": "ManageLibrary\\GUI\\fHome.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T09:47:46.96Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "fSearchAccountUtil.cs [Design]",
-              "DocumentMoniker": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\GUI\\fSearchAccountUtil.cs",
-              "RelativeDocumentMoniker": "ManageLibrary\\GUI\\fSearchAccountUtil.cs",
-              "ToolTip": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\GUI\\fSearchAccountUtil.cs [Design]",
-              "RelativeToolTip": "ManageLibrary\\GUI\\fSearchAccountUtil.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T10:08:43.095Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "TheLoaiDAO.cs",
+              "DocumentMoniker": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\DAO\\TheLoaiDAO.cs",
+              "RelativeDocumentMoniker": "ManageLibrary\\DAO\\TheLoaiDAO.cs",
+              "ToolTip": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\DAO\\TheLoaiDAO.cs",
+              "RelativeToolTip": "ManageLibrary\\DAO\\TheLoaiDAO.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAswEEAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T11:19:38.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "fStatistic.cs [Design]",
               "DocumentMoniker": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\GUI\\fStatistic.cs",
               "RelativeDocumentMoniker": "ManageLibrary\\GUI\\fStatistic.cs",
@@ -164,31 +208,88 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\DTO\\Class1.cs",
-              "RelativeDocumentMoniker": "ManageLibrary\\DTO\\Class1.cs",
-              "ToolTip": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\DTO\\Class1.cs",
-              "RelativeToolTip": "ManageLibrary\\DTO\\Class1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T09:44:15.551Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\DAO\\Class1.cs",
-              "RelativeDocumentMoniker": "ManageLibrary\\DAO\\Class1.cs",
-              "ToolTip": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\DAO\\Class1.cs",
-              "RelativeToolTip": "ManageLibrary\\DAO\\Class1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\GUI\\Form1.cs",
+              "RelativeDocumentMoniker": "ManageLibrary\\GUI\\Form1.cs",
+              "ToolTip": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\GUI\\Form1.cs [Design]",
+              "RelativeToolTip": "ManageLibrary\\GUI\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T09:44:13.292Z"
+              "WhenOpened": "2025-05-05T09:35:39.639Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "fSearchAccountUtil.cs [Design]",
+              "DocumentMoniker": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\GUI\\fSearchAccountUtil.cs",
+              "RelativeDocumentMoniker": "ManageLibrary\\GUI\\fSearchAccountUtil.cs",
+              "ToolTip": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\GUI\\fSearchAccountUtil.cs [Design]",
+              "RelativeToolTip": "ManageLibrary\\GUI\\fSearchAccountUtil.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T10:08:43.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "fCoupon.cs [Design]",
+              "DocumentMoniker": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\GUI\\fCoupon.cs",
+              "RelativeDocumentMoniker": "ManageLibrary\\GUI\\fCoupon.cs",
+              "ToolTip": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\GUI\\fCoupon.cs [Design]",
+              "RelativeToolTip": "ManageLibrary\\GUI\\fCoupon.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T10:03:56.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TheLoai.cs",
+              "DocumentMoniker": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\DTO\\TheLoai.cs",
+              "RelativeDocumentMoniker": "ManageLibrary\\DTO\\TheLoai.cs",
+              "ToolTip": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\DTO\\TheLoai.cs",
+              "RelativeToolTip": "ManageLibrary\\DTO\\TheLoai.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T11:14:17.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "NhaXuatBan.cs",
+              "DocumentMoniker": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\DTO\\NhaXuatBan.cs",
+              "RelativeDocumentMoniker": "ManageLibrary\\DTO\\NhaXuatBan.cs",
+              "ToolTip": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\DTO\\NhaXuatBan.cs",
+              "RelativeToolTip": "ManageLibrary\\DTO\\NhaXuatBan.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T11:12:33.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TacGia.cs",
+              "DocumentMoniker": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\DTO\\TacGia.cs",
+              "RelativeDocumentMoniker": "ManageLibrary\\DTO\\TacGia.cs",
+              "ToolTip": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\DTO\\TacGia.cs",
+              "RelativeToolTip": "ManageLibrary\\DTO\\TacGia.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T11:11:37.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "fAccount.cs",
+              "DocumentMoniker": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\GUI\\fAccount.cs",
+              "RelativeDocumentMoniker": "ManageLibrary\\GUI\\fAccount.cs",
+              "ToolTip": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\GUI\\fAccount.cs",
+              "RelativeToolTip": "ManageLibrary\\GUI\\fAccount.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T11:04:24.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "fStatistic.cs",
               "DocumentMoniker": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\GUI\\fStatistic.cs",
               "RelativeDocumentMoniker": "ManageLibrary\\GUI\\fStatistic.cs",
@@ -197,18 +298,6 @@
               "ViewState": "AQIAAAEAAAAAAAAAAAAvwBIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T10:06:54.936Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "fBook.cs",
-              "DocumentMoniker": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\GUI\\fBook.cs",
-              "RelativeDocumentMoniker": "ManageLibrary\\GUI\\fBook.cs",
-              "ToolTip": "D:\\GitHub\\Project_DBMS\\ManageLibrary\\GUI\\fBook.cs",
-              "RelativeToolTip": "ManageLibrary\\GUI\\fBook.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAvwBIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T09:56:41.422Z"
             }
           ]
         }

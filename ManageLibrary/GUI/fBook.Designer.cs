@@ -203,6 +203,7 @@
             this.dgvSach.RowTemplate.Height = 24;
             this.dgvSach.Size = new System.Drawing.Size(953, 392);
             this.dgvSach.TabIndex = 3;
+            this.dgvSach.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvSach_CellMouseClick);
             // 
             // MaSach
             // 
@@ -386,6 +387,7 @@
             this.btnResertBook.TabIndex = 23;
             this.btnResertBook.Text = "Làm mới";
             this.btnResertBook.UseVisualStyleBackColor = true;
+            this.btnResertBook.Click += new System.EventHandler(this.btnResertBook_Click);
             // 
             // cbLoaiTaiLieu
             // 
@@ -499,6 +501,7 @@
             this.btnDeleteBook.TabIndex = 8;
             this.btnDeleteBook.Text = "Xóa";
             this.btnDeleteBook.UseVisualStyleBackColor = true;
+            this.btnDeleteBook.Click += new System.EventHandler(this.btnDeleteBook_Click);
             // 
             // label7
             // 
@@ -518,6 +521,7 @@
             this.btnFindBook.TabIndex = 10;
             this.btnFindBook.Text = "Tìm";
             this.btnFindBook.UseVisualStyleBackColor = true;
+            this.btnFindBook.Click += new System.EventHandler(this.btnFindBook_Click);
             // 
             // label11
             // 
@@ -537,6 +541,7 @@
             this.btnUpdateBook.TabIndex = 9;
             this.btnUpdateBook.Text = "Cập nhật";
             this.btnUpdateBook.UseVisualStyleBackColor = true;
+            this.btnUpdateBook.Click += new System.EventHandler(this.btnUpdateBook_Click);
             // 
             // label12
             // 
@@ -566,6 +571,7 @@
             this.btnAddBook.TabIndex = 7;
             this.btnAddBook.Text = "Thêm";
             this.btnAddBook.UseVisualStyleBackColor = true;
+            this.btnAddBook.Click += new System.EventHandler(this.btnAddBook_Click);
             // 
             // label9
             // 
@@ -619,6 +625,7 @@
             this.dgvTacGia.RowTemplate.Height = 24;
             this.dgvTacGia.Size = new System.Drawing.Size(712, 544);
             this.dgvTacGia.TabIndex = 3;
+            this.dgvTacGia.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvTacGia_CellMouseClick);
             // 
             // MaTacGia
             // 
@@ -663,6 +670,7 @@
             this.btnFindTacGia.TabIndex = 20;
             this.btnFindTacGia.Text = "Tìm";
             this.btnFindTacGia.UseVisualStyleBackColor = true;
+            this.btnFindTacGia.Click += new System.EventHandler(this.btnFindTacGia_Click);
             // 
             // numTacGiaID
             // 
@@ -696,6 +704,7 @@
             this.btnResertTacGia.TabIndex = 11;
             this.btnResertTacGia.Text = "Làm mới";
             this.btnResertTacGia.UseVisualStyleBackColor = true;
+            this.btnResertTacGia.Click += new System.EventHandler(this.btnResertTacGia_Click);
             // 
             // txbTenTacGia
             // 
@@ -713,6 +722,7 @@
             this.btnDeleteTacGia.TabIndex = 8;
             this.btnDeleteTacGia.Text = "Xóa";
             this.btnDeleteTacGia.UseVisualStyleBackColor = true;
+            this.btnDeleteTacGia.Click += new System.EventHandler(this.btnDeleteTacGia_Click);
             // 
             // label2
             // 
@@ -733,6 +743,7 @@
             this.btnUpdateTacGia.TabIndex = 9;
             this.btnUpdateTacGia.Text = "Sửa";
             this.btnUpdateTacGia.UseVisualStyleBackColor = true;
+            this.btnUpdateTacGia.Click += new System.EventHandler(this.btnUpdateTacGia_Click);
             // 
             // btnAddTacGia
             // 
@@ -743,6 +754,7 @@
             this.btnAddTacGia.TabIndex = 7;
             this.btnAddTacGia.Text = "Thêm";
             this.btnAddTacGia.UseVisualStyleBackColor = true;
+            this.btnAddTacGia.Click += new System.EventHandler(this.btnAddTacGia_Click);
             // 
             // tabPage3
             // 
@@ -791,6 +803,7 @@
             this.btnFindPushlisher.TabIndex = 20;
             this.btnFindPushlisher.Text = "Tìm";
             this.btnFindPushlisher.UseVisualStyleBackColor = true;
+            this.btnFindPushlisher.Click += new System.EventHandler(this.btnFindPushlisher_Click);
             // 
             // btnResetNXB
             // 
@@ -801,6 +814,7 @@
             this.btnResetNXB.TabIndex = 18;
             this.btnResetNXB.Text = "Làm mới";
             this.btnResetNXB.UseVisualStyleBackColor = true;
+            this.btnResetNXB.Click += new System.EventHandler(this.btnResetNXB_Click);
             // 
             // numNXBid
             // 
@@ -841,6 +855,7 @@
             this.btnXoaNXB.TabIndex = 8;
             this.btnXoaNXB.Text = "Xóa";
             this.btnXoaNXB.UseVisualStyleBackColor = true;
+            this.btnXoaNXB.Click += new System.EventHandler(this.btnXoaNXB_Click);
             // 
             // label1
             // 
@@ -861,6 +876,7 @@
             this.btnSuaNXB.TabIndex = 9;
             this.btnSuaNXB.Text = "Sửa";
             this.btnSuaNXB.UseVisualStyleBackColor = true;
+            this.btnSuaNXB.Click += new System.EventHandler(this.btnSuaNXB_Click);
             // 
             // btnThemNXB
             // 
@@ -871,6 +887,7 @@
             this.btnThemNXB.TabIndex = 7;
             this.btnThemNXB.Text = "Thêm";
             this.btnThemNXB.UseVisualStyleBackColor = true;
+            this.btnThemNXB.Click += new System.EventHandler(this.btnThemNXB_Click);
             // 
             // dgvNhaXuatBan
             // 
@@ -894,6 +911,7 @@
             this.dgvNhaXuatBan.RowTemplate.Height = 24;
             this.dgvNhaXuatBan.Size = new System.Drawing.Size(728, 544);
             this.dgvNhaXuatBan.TabIndex = 3;
+            this.dgvNhaXuatBan.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvNhaXuatBan_CellMouseClick);
             // 
             // NXBID
             // 
@@ -960,6 +978,7 @@
             this.btnFindTheLoai.TabIndex = 19;
             this.btnFindTheLoai.Text = "Tìm";
             this.btnFindTheLoai.UseVisualStyleBackColor = true;
+            this.btnFindTheLoai.Click += new System.EventHandler(this.btnFindTheLoai_Click);
             // 
             // numTheLoaiID
             // 
@@ -993,6 +1012,7 @@
             this.btnResetTheLoai.TabIndex = 11;
             this.btnResetTheLoai.Text = "Làm mới";
             this.btnResetTheLoai.UseVisualStyleBackColor = true;
+            this.btnResetTheLoai.Click += new System.EventHandler(this.btnResetTheLoai_Click);
             // 
             // txbTenTheLoai
             // 
@@ -1010,6 +1030,7 @@
             this.btnXoaTheLoai.TabIndex = 8;
             this.btnXoaTheLoai.Text = "Xóa";
             this.btnXoaTheLoai.UseVisualStyleBackColor = true;
+            this.btnXoaTheLoai.Click += new System.EventHandler(this.btnXoaTheLoai_Click);
             // 
             // label3
             // 
@@ -1030,6 +1051,7 @@
             this.btnSuaTheLoai.TabIndex = 9;
             this.btnSuaTheLoai.Text = "Sửa";
             this.btnSuaTheLoai.UseVisualStyleBackColor = true;
+            this.btnSuaTheLoai.Click += new System.EventHandler(this.btnSuaTheLoai_Click);
             // 
             // btnThemTheLoai
             // 
@@ -1040,6 +1062,7 @@
             this.btnThemTheLoai.TabIndex = 7;
             this.btnThemTheLoai.Text = "Thêm";
             this.btnThemTheLoai.UseVisualStyleBackColor = true;
+            this.btnThemTheLoai.Click += new System.EventHandler(this.btnThemTheLoai_Click);
             // 
             // dgvTheLoai
             // 
@@ -1063,6 +1086,7 @@
             this.dgvTheLoai.RowTemplate.Height = 24;
             this.dgvTheLoai.Size = new System.Drawing.Size(713, 544);
             this.dgvTheLoai.TabIndex = 3;
+            this.dgvTheLoai.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvTheLoai_CellMouseClick);
             // 
             // TheLoaiID
             // 
