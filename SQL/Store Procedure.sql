@@ -362,7 +362,7 @@ BEGIN
 END;
 
 GO
-/***	Find account by advanced (Van)		***/
+/***	Find book by advanced (Van)		***/
 CREATE OR ALTER PROCEDURE SP_Find_Book_By_Advanced
 (
 	@TenTacGia NVARCHAR(255) = NULL,
@@ -387,7 +387,7 @@ BEGIN
 END;
 
 GO
-/***	Delete account(Van)		***/
+/***	Delete book(Van)		***/
 CREATE OR ALTER PROCEDURE SP_Delete_Book
     @MaSach int
 AS
@@ -448,7 +448,7 @@ BEGIN
 END;
 
 GO
-/***	Delete account(Van)		***/
+/***	Delete tac gia(Van)		***/
 CREATE OR ALTER PROCEDURE SP_Delete_TacGia
     @MaTacGia int
 AS
@@ -461,87 +461,6 @@ BEGIN
 		SELECT @err = N'Lỗi' + ERROR_MESSAGE()
 		RAISERROR(@err, 16, 1)
     END CATCH;
-END;
-
-GO
-/* Trả nợ phiếu phạt (Phát) */
-CREATE OR ALTER PROCEDURE SP_Pay_Penalty_Coupon_Debt
-    @MaPhieuPhat int
-AS
-BEGIN
-    BEGIN TRY
-		UPDATE dbo.PhieuPhat
-		SET NgayTra = GETDATE()
-		WHERE MaPhieuPhat = @MaPhieuPhat
-    END TRY
-    BEGIN CATCH
-        DECLARE @err NVARCHAR(MAX)
-		SELECT @err = N'Lỗi' + ERROR_MESSAGE()
-		RAISERROR(@err, 16, 1)
-    END CATCH;
-END;
-
-
-GO
-/* Thêm phiếu phạt (Hoàn) */
-CREATE OR ALTER PROCEDURE SP_Add_New_PhieuPhat
-    @MaPhieuMuon int
-AS
-BEGIN
-    BEGIN TRANSACTION;
-
-    BEGIN TRY
-		UPDATE dbo.PhieuMuonSach
-		SET NgayTra = GETDATE()
-		WHERE MaPhieuMuon = @MaPhieuMuon
-
-		UPDATE dbo.CuonSach
-		SET TinhTrang = N'Đã trả'
-		WHERE MaPhieuMuon = @MaPhieuMuon AND TinhTrang = N'Đang mượn'
-
-		DECLARE @TienPhat DECIMAL(18, 0) = dbo.FN_Calculate_Penalty_Value(@MaPhieuMuon);        
-		INSERT INTO dbo.PhieuPhat (MaPhieuMuon, TienPhat)
-        VALUES (@MaPhieuMuon, @TienPhat);
-		
-        COMMIT;
-    END TRY
-    BEGIN CATCH
-		DECLARE @err NVARCHAR(MAX)
-		SELECT @err = N'Lỗi' + ERROR_MESSAGE()
-		RAISERROR(@err, 16, 1)
-        ROLLBACK;
-    END CATCH;
-END;
-
-GO
-/* Xoá phiếu phạt (Hoàn) */
-CREATE OR ALTER PROCEDURE SP_Delete_PhieuPhat
-    @MaPhieuPhat int
-AS
-BEGIN
-    BEGIN TRY
-            DELETE dbo.PhieuPhat WHERE MaPhieuPhat = @MaPhieuPhat;
-    END TRY
-    BEGIN CATCH
-        DECLARE @err NVARCHAR(MAX)
-		SELECT @err = N'Lỗi' + ERROR_MESSAGE()
-		RAISERROR(@err, 16, 1)
-    END CATCH;
-END;
-
-GO
-/* Tìm kiếm phiếu phạt (Hoàn)*/
-CREATE OR ALTER PROCEDURE SP_Find_PhieuPhat
-(
-    @MaTaiKhoan int 
-)
-AS
-BEGIN
-	SELECT 
-		PP.MaPhieuPhat, PP.MaPhieuMuon, PP.TienPhat, PP.NgayTra
-	FROM dbo.PhieuPhat PP 
-	JOIN dbo.PhieuMuonSach PMS ON PMS.MaPhieuMuon = PP.MaPhieuMuon
-	WHERE PMS.MaTaiKhoan = @MaTaiKhoan
 END;
 
 GO
@@ -885,17 +804,3 @@ BEGIN
 END;
 
 GO
-/***	Get Book Penalty Coupon by status (Phat)		***/
-CREATE OR ALTER PROCEDURE SP_Get_Penalty_Coupon_By_Status
-(
-	@type int
-)
-AS
-BEGIN
-	SELECT 
-		*
-	FROM VW_PhieuPhat_List
-	WHERE 
-		(@type = 0 AND NgayTra IS NULL) OR
-		(@type = 1 AND NgayTra IS NOT NULL)
-END;

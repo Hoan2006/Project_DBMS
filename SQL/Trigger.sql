@@ -100,23 +100,6 @@ BEGIN
 END; 
 
 GO 
-/* Trigger không cho tạo, cập nhật ngày trả nợ < ngày trả sách*/
-CREATE TRIGGER TR_Prevent_return_date_update
-ON dbo.PhieuPhat
-AFTER INSERT, UPDATE
-AS
-BEGIN
-    IF EXISTS (
-        SELECT 1
-        FROM INSERTED i
-        JOIN PhieuMuonSach pms ON i.MaPhieuMuon = pms.MaPhieuMuon
-        WHERE i.NgayTra < pms.NgayTra
-		)
-    BEGIN
-        RAISERROR('Ngày trả không được lớn hơn ngày trả thực tế.', 16, 1);
-        ROLLBACK TRANSACTION;
-    END;
-END;
 
 GO
 /* Trigger không cho tạo, cập nhật sách trùng*/
@@ -147,95 +130,37 @@ END;
 GO
 /* Trigger không cho tạo, cập nhật tác giả trùng (Phat)*/
 CREATE TRIGGER TR_Prevent_duplicate_Author
-ON TacGia
-FOR INSERT, UPDATE
+ON dbo.TacGia
+AFTER INSERT, UPDATE
 AS
 BEGIN
-	IF EXISTS (SELECT 1 FROM TacGia TG JOIN inserted i ON TG.MaTacGia = i.MaTacGia 
-	WHERE TG.TenTacGia = i.TenTacGia AND TG.MaTacGia<>i.MaTacGia)
-	BEGIN
-		RAISERROR('Không trùng tên tác giả', 16, 1)
-		ROLLBACK TRANSACTION
-	END
+    IF EXISTS (SELECT 1 FROM TacGia TG JOIN inserted i ON TG.TenTacGia = i.TenTacGia AND TG.MaTacGia <> i.MaTacGia)
+    BEGIN
+        -- Hủy thao tác INSERT hoặc UPDATE nếu dữ liệu bị trùng
+        ROLLBACK TRANSACTION;
+        RAISERROR('Không thể thêm tác giả trùng tên!', 16, 1);
+    END
 END
 
 GO
 --Trigger Check Duplicates_NXB(Trung)--
-CREATE or Alter TRIGGER TR_Prevent_Publisher_Duplicate
+CREATE OR ALTER TRIGGER TR_Prevent_Publisher_Duplicate
 ON dbo.NhaXuatBan
 AFTER INSERT, UPDATE
 AS
 BEGIN
-    IF EXISTS (SELECT 1 FROM dbo.NhaXuatBan NXB JOIN inserted i ON NXB.MaNhaXuatBan = i.MaNhaXuatBan
-	WHERE NXB.TenNhaXuatBan = i.TenNhaXuatBan AND NXB.MaNhaXuatBan<>i.MaNhaXuatBan)
-    BEGIN
-        RAISERROR('Không trùng tên nhà xuất bản', 16, 1)
-		ROLLBACK TRANSACTION
-    END;
-END;
-
-GO
-/***	Trigger Prevent Borrow Book by Situations (Phat)	***/
-CREATE OR ALTER TRIGGER TR_Prevent_Borrowed_Situations
-ON dbo.PhieuMuonSach
-AFTER INSERT
-AS
-BEGIN
-    DECLARE @ThamKhao INT, @GiaoTrinh INT, @MaTaiKhoan INT, @RollBack BIT = 0;
-
-    SELECT @MaTaiKhoan = MaTaiKhoan FROM inserted;
+    SET NOCOUNT ON;
 
     IF EXISTS (
-        SELECT 1 
-        FROM PhieuPhat pp
-        JOIN PhieuMuonSach pms ON pp.MaPhieuMuon = pms.MaPhieuMuon
-        WHERE pms.MaTaiKhoan = @MaTaiKhoan AND pp.NgayTra IS NULL
+         SELECT i.TenNhaXuatBan
+         FROM inserted i
+         WHERE (SELECT COUNT(*) FROM dbo.NhaXuatBan p 
+                WHERE p.TenNhaXuatBan = i.TenNhaXuatBan) > 1
     )
     BEGIN
-        RAISERROR (N'Tài khoản vẫn còn phiếu phạt chưa trả.', 16, 1);
-        SET @RollBack = 1;
+        RAISERROR('Không được trùng tên nhà xuất bản.', 16, 1);
+        ROLLBACK TRANSACTION;
     END;
-
-    IF EXISTS (
-        SELECT * 
-        FROM dbo.PhieuMuonSach PMS
-		JOIN dbo.CuonSach CS ON CS.MaPhieuMuon = PMS.MaPhieuMuon
-        WHERE PMS.MaTaiKhoan = @MaTaiKhoan 
-		AND PMS.NgayTra IS NULL
-		AND CS.TinhTrang = N'Trả trễ'
-    )
-    BEGIN
-        RAISERROR (N'Tài khoản có sách đang trễ hẹn trả.', 16, 1);
-        SET @RollBack = 1;
-    END;
-	
-    SELECT 
-        @ThamKhao = SUM(CASE WHEN S.LoaiTaiLieu = N'Sách tham khảo' THEN 1 ELSE 0 END),
-        @GiaoTrinh = SUM(CASE WHEN S.LoaiTaiLieu = N'Giáo trình' THEN 1 ELSE 0 END)
-	FROM dbo.PhieuMuonSach PMS 
-	JOIN inserted i ON i.MaTaiKhoan = PMS.MaTaiKhoan
-    JOIN dbo.CuonSach CS ON CS.MaPhieuMuon = PMS.MaPhieuMuon
-    JOIN dbo.Sach S ON S.MaSach = CS.MaSach
-
-    IF EXISTS (
-        SELECT 1 
-        FROM dbo.TaiKhoan TK
-        JOIN inserted i ON i.MaTaiKhoan = TK.MaTaiKhoan
-        WHERE 
-            (TK.VaiTro = N'Sinh viên CLC' AND ((@ThamKhao > 10) OR (@GiaoTrinh > 20)))
-            OR (TK.VaiTro = N'Sinh viên đại trà' AND ((@ThamKhao > 10) OR (@GiaoTrinh > 15)))
-            OR (TK.VaiTro = N'Học viên cao học' AND ((@ThamKhao > 5) OR (@GiaoTrinh > 5)))
-            OR (TK.VaiTro = N'Giảng viên' AND ((@ThamKhao > 10) OR (@GiaoTrinh > 5)))
-    )
-    BEGIN
-        RAISERROR (N'Vượt quá số lượng sách được mượn.', 16, 1);
-        SET @RollBack = 1;
-    END;
-
-	IF(@RollBack = 1)
-	BEGIN
-		ROLLBACK TRANSACTION;
-	END;
 END;
 
 GO
