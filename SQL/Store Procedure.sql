@@ -154,6 +154,35 @@ BEGIN
 		RAISERROR(@err, 16, 1)
     END CATCH;
 END;
+GO
+
+-- Tim kiem tai khoan
+CREATE PROCEDURE SP_Find_Account_By_Advanced
+(
+    @MaTaiKhoan int = NULL,
+    @HoTen nvarchar(255) = NULL,
+    @DiaChi nvarchar(255) = NULL,
+    @Email NVARCHAR(255) = NULL,
+    @SoDienThoai NVARCHAR(10) = NULL,
+    @VaiTro nvarchar(50) = NULL,
+    @GioiTinh nvarchar(10) = NULL
+)
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT *
+    FROM VW_Account_List
+    WHERE 
+        (@MaTaiKhoan IS NULL OR MaTaiKhoan = @MaTaiKhoan)
+        AND (@HoTen IS NULL OR HoTen LIKE @HoTen + '%')
+        AND (@DiaChi IS NULL OR DiaChi LIKE @DiaChi + '%')
+        AND (@Email IS NULL OR Email LIKE @Email + '%')
+        AND (@SoDienThoai IS NULL OR SoDienThoai LIKE @SoDienThoai + '%')
+        AND (@VaiTro IS NULL OR VaiTro = @VaiTro)
+        AND (@GioiTinh IS NULL OR GioiTinh = @GioiTinh);
+END;
+
 
 GO
 /***	Add new schedule (Phat)		***/

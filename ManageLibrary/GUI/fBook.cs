@@ -641,5 +641,26 @@ namespace GUI
         {
 
         }
+
+        private void btnAuthorSearch_Click(object sender, EventArgs e)
+        {
+            fReaderSearchUtil f = new fReaderSearchUtil((int)type.AuthorMode);
+            f.ShowDialog();
+            cbTacGia.SelectedValue = Session.temp;
+        }
+
+        private void btnNXBSearch_Click(object sender, EventArgs e)
+        {
+            fReaderSearchUtil f = new fReaderSearchUtil((int)type.NXBMode);
+            f.ShowDialog();
+            cbNhaXuatBan.SelectedValue = Session.temp;
+        }
+
+        private void btnGerneSearch_Click(object sender, EventArgs e)
+        {
+            fReaderSearchUtil f = new fReaderSearchUtil((int)type.GerneMode);
+            f.ShowDialog();
+            cbTheLoai.SelectedValue = Session.temp;
+        }
     }
 }

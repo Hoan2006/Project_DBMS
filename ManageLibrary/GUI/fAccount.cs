@@ -9,14 +9,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Collections.Specialized.BitVector32;
 
 namespace GUI
 {
     public partial class fAccount : Form
     {
         BindingSource accountList = new BindingSource();
-        BindingSource ScheduleList = new BindingSource();
         private DataGridViewCell previousCell;
 
         public fAccount()
@@ -24,15 +22,11 @@ namespace GUI
             InitializeComponent();
 
             dgvAccount.DataSource = accountList;
-            dgvSchedule.DataSource = ScheduleList;
 
             DetachAccountBinding();
-            DetachScheduleBinding();
 
-            //LoadAccountProfile();
+            LoadAccountProfile();
             LoadAccountList();
-
-            //LoadScheduleList();
         }
 
         //Binding
@@ -48,14 +42,6 @@ namespace GUI
             inpAccPhone.DataBindings.Clear();
             cbAccRole.DataBindings.Clear();
             inpAccAddress.DataBindings.Clear();
-        }
-
-        private void DetachScheduleBinding()
-        {
-            dtpLibDay.DataBindings.Clear();
-            cbLibName.DataBindings.Clear();
-            cbLibCa.DataBindings.Clear();
-            numLibID.DataBindings.Clear();
         }
 
         private void AddAccountBinding()
@@ -90,6 +76,21 @@ namespace GUI
             cbAccRole.DataBindings.Add(new Binding("Text", dgvAccount.DataSource, "VaiTro"));
             inpAccAddress.DataBindings.Add(new Binding("Text", dgvAccount.DataSource, "DiaChi"));
         }
+        // Tab1 
+
+        private void LoadAccountProfile()
+        {
+            TaiKhoan tk = Session.loginAccount;
+
+            lbMaTaiKhoan.Text = tk.MaTaiKhoan.ToString();
+            lbHoTen.Text = tk.HoTen;
+            lbNgaySinh.Text = tk.NgaySinh.ToShortDateString();
+            lbGioiTinh.Text = tk.GioiTinh.ToString();
+            lbEmail.Text = tk.Email;
+            lbDiaChi.Text = tk.DiaChi;
+            lbVaiTro.Text = tk.VaiTro;
+            lbSoDienThoai.Text = tk.SoDienThoai;
+        }
 
         // Tab2
         private void LoadAccountList()
@@ -119,7 +120,6 @@ namespace GUI
         {
             if (previousCell != null && e.RowIndex == previousCell.RowIndex)
             {
-                DetachScheduleBinding();
                 numAccID.Value = 0;
                 inpAccName.Clear();
                 inpAccPass.Clear();
@@ -275,32 +275,14 @@ namespace GUI
             }
         }
 
-        //Tab 3
-        /*private string maTaiKhoan = null;
-
-        private DateTime setWeekstart;
-        private DateTime setWeekend;
-        private bool changeWeek = false;
-        private DateTime today = DateTime.Now;
-
-        private void PersonalSchedule()
+        private void btnUpdateProfile_Click(object sender, EventArgs e)
         {
-            if (Session.loginAccount.VaiTro == "Thủ thư")
-            {
-                maTaiKhoan = Session.loginAccount.MaTaiKhoan.ToString();
-            }
+
         }
 
-        private void LoadScheduleList()
+        private void btnChangePassword_Click(object sender, EventArgs e)
         {
-            cbLibName.DataSource = TaiKhoanDAO.Instance.LoadLibrarian();
-            cbLibName.DisplayMember = "HoTen";
-            cbLibName.ValueMember = "MaTaiKhoan";
-            cbLibName.SelectedItem = null;
 
-            changeWeek = false;
-            PersonalSchedule();
-            LoadThisWeek();
-        }*/
+        }
     }
 }

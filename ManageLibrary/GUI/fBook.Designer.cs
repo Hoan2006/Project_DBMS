@@ -332,6 +332,7 @@
             this.btnGerneSearch.Size = new System.Drawing.Size(31, 27);
             this.btnGerneSearch.TabIndex = 51;
             this.btnGerneSearch.UseVisualStyleBackColor = false;
+            this.btnGerneSearch.Click += new System.EventHandler(this.btnGerneSearch_Click);
             // 
             // btnNXBSearch
             // 
@@ -344,6 +345,7 @@
             this.btnNXBSearch.Size = new System.Drawing.Size(31, 27);
             this.btnNXBSearch.TabIndex = 50;
             this.btnNXBSearch.UseVisualStyleBackColor = false;
+            this.btnNXBSearch.Click += new System.EventHandler(this.btnNXBSearch_Click);
             // 
             // btnAuthorSearch
             // 
@@ -356,6 +358,7 @@
             this.btnAuthorSearch.Size = new System.Drawing.Size(31, 27);
             this.btnAuthorSearch.TabIndex = 49;
             this.btnAuthorSearch.UseVisualStyleBackColor = false;
+            this.btnAuthorSearch.Click += new System.EventHandler(this.btnAuthorSearch_Click);
             // 
             // label4
             // 
