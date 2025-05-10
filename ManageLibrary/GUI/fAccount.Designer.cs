@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -454,12 +454,13 @@
             this.dgvAccount.ReadOnly = true;
             this.dgvAccount.RowHeadersVisible = false;
             this.dgvAccount.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.dgvAccount.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.dgvAccount.RowsDefaultCellStyle = dataGridViewCellStyle13;
             this.dgvAccount.RowTemplate.Height = 24;
             this.dgvAccount.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvAccount.Size = new System.Drawing.Size(953, 397);
             this.dgvAccount.TabIndex = 3;
+            this.dgvAccount.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvAccount_CellMouseClick);
             // 
             // TaiKhoanID
             // 
@@ -633,6 +634,7 @@
             this.btnReset.TabIndex = 17;
             this.btnReset.Text = "Làm mới";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // label17
             // 
@@ -709,6 +711,7 @@
             this.btnDeleteAcc.TabIndex = 8;
             this.btnDeleteAcc.Text = "Xóa";
             this.btnDeleteAcc.UseVisualStyleBackColor = true;
+            this.btnDeleteAcc.Click += new System.EventHandler(this.btnDeleteAcc_Click);
             // 
             // label7
             // 
@@ -729,6 +732,7 @@
             this.btnFindAcc.TabIndex = 10;
             this.btnFindAcc.Text = "Tìm";
             this.btnFindAcc.UseVisualStyleBackColor = true;
+            this.btnFindAcc.Click += new System.EventHandler(this.btnFindAcc_Click);
             // 
             // label11
             // 
@@ -749,6 +753,7 @@
             this.btnUpdateAcc.TabIndex = 9;
             this.btnUpdateAcc.Text = "Cập nhật";
             this.btnUpdateAcc.UseVisualStyleBackColor = true;
+            this.btnUpdateAcc.Click += new System.EventHandler(this.btnUpdateAcc_Click);
             // 
             // label12
             // 
@@ -779,6 +784,7 @@
             this.btnAddAcc.TabIndex = 7;
             this.btnAddAcc.Text = "Thêm";
             this.btnAddAcc.UseVisualStyleBackColor = true;
+            this.btnAddAcc.Click += new System.EventHandler(this.btnAddAcc_Click);
             // 
             // cbAccRole
             // 
@@ -1029,17 +1035,17 @@
             this.dgvSchedule.MultiSelect = false;
             this.dgvSchedule.Name = "dgvSchedule";
             this.dgvSchedule.ReadOnly = true;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSchedule.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSchedule.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.dgvSchedule.RowHeadersVisible = false;
             this.dgvSchedule.RowHeadersWidth = 51;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.dgvSchedule.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.dgvSchedule.RowsDefaultCellStyle = dataGridViewCellStyle15;
             this.dgvSchedule.RowTemplate.Height = 24;
             this.dgvSchedule.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSchedule.Size = new System.Drawing.Size(823, 455);
