@@ -3,78 +3,82 @@
   "WorkspaceRootPath": "C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\managelibrary\\gui\\fglobalregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|solutionrelative:managelibrary\\gui\\fglobalregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\managelibrary\\gui\\freaderquanlytaikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|solutionrelative:managelibrary\\gui\\freaderquanlytaikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\managelibrary\\gui\\fgloballogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|solutionrelative:managelibrary\\gui\\fgloballogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2A946D7-EBD0-41DD-A123-78FECBE0C439}|ManageLibrary\\DAO\\DAO.csproj|C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\managelibrary\\dao\\taikhoandao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2A946D7-EBD0-41DD-A123-78FECBE0C439}|ManageLibrary\\DAO\\DAO.csproj|solutionrelative:managelibrary\\dao\\taikhoandao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2A946D7-EBD0-41DD-A123-78FECBE0C439}|ManageLibrary\\DAO\\DAO.csproj|c:\\users\\tuite\\documents\\prj_dbms\\project_dbms\\managelibrary\\dao\\tacgiadao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2A946D7-EBD0-41DD-A123-78FECBE0C439}|ManageLibrary\\DAO\\DAO.csproj|solutionrelative:managelibrary\\dao\\tacgiadao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|c:\\users\\tuite\\documents\\prj_dbms\\project_dbms\\managelibrary\\gui\\freaderlichsumuonsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|solutionrelative:managelibrary\\gui\\freaderlichsumuonsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|c:\\users\\tuite\\documents\\prj_dbms\\project_dbms\\managelibrary\\gui\\fgloballogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|solutionrelative:managelibrary\\gui\\fgloballogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|c:\\users\\tuite\\documents\\prj_dbms\\project_dbms\\managelibrary\\gui\\fgloballogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\managelibrary\\gui\\fgloballogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|solutionrelative:managelibrary\\gui\\fgloballogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2A946D7-EBD0-41DD-A123-78FECBE0C439}|ManageLibrary\\DAO\\DAO.csproj|c:\\users\\tuite\\documents\\prj_dbms\\project_dbms\\managelibrary\\dao\\taikhoandao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2A946D7-EBD0-41DD-A123-78FECBE0C439}|ManageLibrary\\DAO\\DAO.csproj|solutionrelative:managelibrary\\dao\\taikhoandao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2A946D7-EBD0-41DD-A123-78FECBE0C439}|ManageLibrary\\DAO\\DAO.csproj|c:\\users\\tuite\\documents\\prj_dbms\\project_dbms\\managelibrary\\dao\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2A946D7-EBD0-41DD-A123-78FECBE0C439}|ManageLibrary\\DAO\\DAO.csproj|C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\managelibrary\\dao\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2A946D7-EBD0-41DD-A123-78FECBE0C439}|ManageLibrary\\DAO\\DAO.csproj|solutionrelative:managelibrary\\dao\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A354C275-94A4-4D7A-BDDC-B274F84D639F}|ManageLibrary\\DTO\\DTO.csproj|c:\\users\\tuite\\documents\\prj_dbms\\project_dbms\\managelibrary\\dto\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A354C275-94A4-4D7A-BDDC-B274F84D639F}|ManageLibrary\\DTO\\DTO.csproj|C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\managelibrary\\dto\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A354C275-94A4-4D7A-BDDC-B274F84D639F}|ManageLibrary\\DTO\\DTO.csproj|solutionrelative:managelibrary\\dto\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|c:\\users\\tuite\\documents\\prj_dbms\\project_dbms\\managelibrary\\gui\\fglobalregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|solutionrelative:managelibrary\\gui\\fglobalregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|c:\\users\\tuite\\documents\\prj_dbms\\project_dbms\\managelibrary\\gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\managelibrary\\gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|solutionrelative:managelibrary\\gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|c:\\users\\tuite\\documents\\prj_dbms\\project_dbms\\managelibrary\\gui\\fglobalregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\managelibrary\\gui\\fglobalregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|solutionrelative:managelibrary\\gui\\fglobalregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|c:\\users\\tuite\\documents\\prj_dbms\\project_dbms\\managelibrary\\gui\\freaderquanlytaikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\managelibrary\\gui\\freaderquanlytaikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|solutionrelative:managelibrary\\gui\\freaderquanlytaikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|c:\\users\\tuite\\documents\\prj_dbms\\project_dbms\\managelibrary\\gui\\freaderquanlytaikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|solutionrelative:managelibrary\\gui\\freaderquanlytaikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|c:\\users\\tuite\\documents\\prj_dbms\\project_dbms\\managelibrary\\gui\\freaderlichsumuonsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\managelibrary\\gui\\freaderlichsumuonsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|solutionrelative:managelibrary\\gui\\freaderlichsumuonsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/LAPTOP_3EVRR5L8/ManageLibrary/True/SqlTable/dbo.TaiKhoan.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2A946D7-EBD0-41DD-A123-78FECBE0C439}|ManageLibrary\\DAO\\DAO.csproj|c:\\users\\tuite\\documents\\prj_dbms\\project_dbms\\managelibrary\\dao\\muonsachdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2A946D7-EBD0-41DD-A123-78FECBE0C439}|ManageLibrary\\DAO\\DAO.csproj|C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\managelibrary\\dao\\muonsachdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2A946D7-EBD0-41DD-A123-78FECBE0C439}|ManageLibrary\\DAO\\DAO.csproj|solutionrelative:managelibrary\\dao\\muonsachdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2A946D7-EBD0-41DD-A123-78FECBE0C439}|ManageLibrary\\DAO\\DAO.csproj|c:\\users\\tuite\\documents\\prj_dbms\\project_dbms\\managelibrary\\dao\\nhaxuatbandao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2A946D7-EBD0-41DD-A123-78FECBE0C439}|ManageLibrary\\DAO\\DAO.csproj|C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\managelibrary\\dao\\nhaxuatbandao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2A946D7-EBD0-41DD-A123-78FECBE0C439}|ManageLibrary\\DAO\\DAO.csproj|solutionrelative:managelibrary\\dao\\nhaxuatbandao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2A946D7-EBD0-41DD-A123-78FECBE0C439}|ManageLibrary\\DAO\\DAO.csproj|c:\\users\\tuite\\documents\\prj_dbms\\project_dbms\\managelibrary\\dao\\sachdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2A946D7-EBD0-41DD-A123-78FECBE0C439}|ManageLibrary\\DAO\\DAO.csproj|C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\managelibrary\\dao\\sachdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2A946D7-EBD0-41DD-A123-78FECBE0C439}|ManageLibrary\\DAO\\DAO.csproj|solutionrelative:managelibrary\\dao\\sachdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|c:\\users\\tuite\\documents\\prj_dbms\\project_dbms\\managelibrary\\gui\\freadertrasach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\managelibrary\\gui\\freadertrasach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|solutionrelative:managelibrary\\gui\\freadertrasach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A354C275-94A4-4D7A-BDDC-B274F84D639F}|ManageLibrary\\DTO\\DTO.csproj|c:\\users\\tuite\\documents\\prj_dbms\\project_dbms\\managelibrary\\dto\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A354C275-94A4-4D7A-BDDC-B274F84D639F}|ManageLibrary\\DTO\\DTO.csproj|C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\managelibrary\\dto\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A354C275-94A4-4D7A-BDDC-B274F84D639F}|ManageLibrary\\DTO\\DTO.csproj|solutionrelative:managelibrary\\dto\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|c:\\users\\tuite\\documents\\prj_dbms\\project_dbms\\managelibrary\\gui\\freadertrasach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\managelibrary\\gui\\freadertrasach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF8CC1DA-4D8D-41C0-A186-C82C2B21D0C0}|ManageLibrary\\GUI\\GUI.csproj|solutionrelative:managelibrary\\gui\\freadertrasach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -85,7 +89,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 24,
           "Children": [
             {
               "$type": "Bookmark",
@@ -104,6 +108,19 @@
               "Name": "ST:2:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TacGiaDAO.cs",
+              "DocumentMoniker": "C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\ManageLibrary\\DAO\\TacGiaDAO.cs",
+              "RelativeDocumentMoniker": "ManageLibrary\\DAO\\TacGiaDAO.cs",
+              "ToolTip": "C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\ManageLibrary\\DAO\\TacGiaDAO.cs",
+              "RelativeToolTip": "ManageLibrary\\DAO\\TacGiaDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T09:06:40.52Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
@@ -113,20 +130,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "fGlobalLogin.cs",
               "DocumentMoniker": "C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\ManageLibrary\\GUI\\fGlobalLogin.cs",
               "RelativeDocumentMoniker": "ManageLibrary\\GUI\\fGlobalLogin.cs",
               "ToolTip": "C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\ManageLibrary\\GUI\\fGlobalLogin.cs",
               "RelativeToolTip": "ManageLibrary\\GUI\\fGlobalLogin.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAqwDIAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAswCsAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-10T08:02:58.714Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "fGlobalLogin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\ManageLibrary\\GUI\\fGlobalLogin.cs",
               "RelativeDocumentMoniker": "ManageLibrary\\GUI\\fGlobalLogin.cs",
@@ -138,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\ManageLibrary\\GUI\\Program.cs",
               "RelativeDocumentMoniker": "ManageLibrary\\GUI\\Program.cs",
@@ -146,25 +163,24 @@
               "RelativeToolTip": "ManageLibrary\\GUI\\Program.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T05:54:58.372Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T05:54:58.372Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
               "Title": "fReaderQuanLyTaiKhoan.cs",
               "DocumentMoniker": "C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\ManageLibrary\\GUI\\fReaderQuanLyTaiKhoan.cs",
               "RelativeDocumentMoniker": "ManageLibrary\\GUI\\fReaderQuanLyTaiKhoan.cs",
               "ToolTip": "C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\ManageLibrary\\GUI\\fReaderQuanLyTaiKhoan.cs",
               "RelativeToolTip": "ManageLibrary\\GUI\\fReaderQuanLyTaiKhoan.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAuwFwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAwwHQAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-10T07:13:03.315Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "fReaderQuanLyTaiKhoan.cs [Design]",
               "DocumentMoniker": "C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\ManageLibrary\\GUI\\fReaderQuanLyTaiKhoan.cs",
               "RelativeDocumentMoniker": "ManageLibrary\\GUI\\fReaderQuanLyTaiKhoan.cs",
@@ -176,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "fReaderLichSuMuonSach.cs",
               "DocumentMoniker": "C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\ManageLibrary\\GUI\\fReaderLichSuMuonSach.cs",
               "RelativeDocumentMoniker": "ManageLibrary\\GUI\\fReaderLichSuMuonSach.cs",
@@ -189,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "NhaXuatBanDAO.cs",
               "DocumentMoniker": "C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\ManageLibrary\\DAO\\NhaXuatBanDAO.cs",
               "RelativeDocumentMoniker": "ManageLibrary\\DAO\\NhaXuatBanDAO.cs",
@@ -197,12 +213,11 @@
               "RelativeToolTip": "ManageLibrary\\DAO\\NhaXuatBanDAO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T06:37:48.127Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T06:37:48.127Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "MuonSachDAO.cs",
               "DocumentMoniker": "C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\ManageLibrary\\DAO\\MuonSachDAO.cs",
               "RelativeDocumentMoniker": "ManageLibrary\\DAO\\MuonSachDAO.cs",
@@ -210,36 +225,33 @@
               "RelativeToolTip": "ManageLibrary\\DAO\\MuonSachDAO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T06:37:32.991Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T06:37:32.991Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "fReaderTraSach.cs [Design]",
               "DocumentMoniker": "C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\ManageLibrary\\GUI\\fReaderTraSach.cs",
               "RelativeDocumentMoniker": "ManageLibrary\\GUI\\fReaderTraSach.cs",
               "ToolTip": "C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\ManageLibrary\\GUI\\fReaderTraSach.cs [Design]",
               "RelativeToolTip": "ManageLibrary\\GUI\\fReaderTraSach.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T06:33:44.456Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-10T06:33:44.456Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "fReaderLichSuMuonSach.cs [Design]",
               "DocumentMoniker": "C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\ManageLibrary\\GUI\\fReaderLichSuMuonSach.cs",
               "RelativeDocumentMoniker": "ManageLibrary\\GUI\\fReaderLichSuMuonSach.cs",
               "ToolTip": "C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\ManageLibrary\\GUI\\fReaderLichSuMuonSach.cs [Design]",
               "RelativeToolTip": "ManageLibrary\\GUI\\fReaderLichSuMuonSach.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T06:11:33.356Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-10T06:11:33.356Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Session.cs",
               "DocumentMoniker": "C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\ManageLibrary\\DTO\\Session.cs",
               "RelativeDocumentMoniker": "ManageLibrary\\DTO\\Session.cs",
@@ -247,22 +259,20 @@
               "RelativeToolTip": "ManageLibrary\\DTO\\Session.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T05:30:20.175Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T05:30:20.175Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "dbo.TaiKhoan [Data]",
+              "DocumentIndex": 13,
+              "Title": "dbo.TaiKhoan.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/LAPTOP_3EVRR5L8/ManageLibrary/True/SqlTable/dbo.TaiKhoan.sql",
-              "ToolTip": "dbo.TaiKhoan [Data]",
+              "ToolTip": "ViewDataWindow_MSSQL__/LAPTOP_3EVRR5L8/ManageLibrary/True/SqlTable/dbo.TaiKhoan.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-05-10T05:26:33.036Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T05:26:33.036Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "DataProvider.cs",
               "DocumentMoniker": "C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\ManageLibrary\\DAO\\DataProvider.cs",
               "RelativeDocumentMoniker": "ManageLibrary\\DAO\\DataProvider.cs",
@@ -270,12 +280,11 @@
               "RelativeToolTip": "ManageLibrary\\DAO\\DataProvider.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAowEoAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T04:49:12.071Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T04:49:12.071Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "SachDAO.cs",
               "DocumentMoniker": "C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\ManageLibrary\\DAO\\SachDAO.cs",
               "RelativeDocumentMoniker": "ManageLibrary\\DAO\\SachDAO.cs",
@@ -283,8 +292,7 @@
               "RelativeToolTip": "ManageLibrary\\DAO\\SachDAO.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T04:56:49.145Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T04:56:49.145Z"
             },
             {
               "$type": "Document",
@@ -294,14 +302,14 @@
               "RelativeDocumentMoniker": "ManageLibrary\\DAO\\TaiKhoanDAO.cs",
               "ToolTip": "C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\ManageLibrary\\DAO\\TaiKhoanDAO.cs",
               "RelativeToolTip": "ManageLibrary\\DAO\\TaiKhoanDAO.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAewEoAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAA1udxwsY4wEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-10T04:44:03.456Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "TaiKhoan.cs",
               "DocumentMoniker": "C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\ManageLibrary\\DTO\\TaiKhoan.cs",
               "RelativeDocumentMoniker": "ManageLibrary\\DTO\\TaiKhoan.cs",
@@ -309,12 +317,11 @@
               "RelativeToolTip": "ManageLibrary\\DTO\\TaiKhoan.cs",
               "ViewState": "AgIAAE0AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T04:43:58.399Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T04:43:58.399Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "fReaderTraSach.cs",
               "DocumentMoniker": "C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\ManageLibrary\\GUI\\fReaderTraSach.cs",
               "RelativeDocumentMoniker": "ManageLibrary\\GUI\\fReaderTraSach.cs",
@@ -322,25 +329,24 @@
               "RelativeToolTip": "ManageLibrary\\GUI\\fReaderTraSach.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T04:43:46.922Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T04:43:46.922Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "fGlobalRegister.cs",
               "DocumentMoniker": "C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\ManageLibrary\\GUI\\fGlobalRegister.cs",
               "RelativeDocumentMoniker": "ManageLibrary\\GUI\\fGlobalRegister.cs",
               "ToolTip": "C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\ManageLibrary\\GUI\\fGlobalRegister.cs",
               "RelativeToolTip": "ManageLibrary\\GUI\\fGlobalRegister.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAwwHcAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAwwHIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-10T04:41:39.349Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "fGlobalRegister.cs [Design]",
               "DocumentMoniker": "C:\\Users\\tuite\\Documents\\PRJ_DBMS\\Project_DBMS\\ManageLibrary\\GUI\\fGlobalRegister.cs",
               "RelativeDocumentMoniker": "ManageLibrary\\GUI\\fGlobalRegister.cs",
