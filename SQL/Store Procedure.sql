@@ -10,7 +10,7 @@ END;
 
 GO
 /***	Get login account profile(Phat)		***/
-CREATE OR ALTER PROCEDURE SP_Get_Account_Profile
+CREATE PROCEDURE SP_Get_Account_Profile
 (@Email nvarchar(255))
 AS
 BEGIN
@@ -55,7 +55,75 @@ BEGIN
 END
 
 GO
-/***	Update account(Phat)		***/
+/***	Update profile(Phat)		***/
+CREATE PROCEDURE SP_Account_Profile
+	@MaTaiKhoan int,
+    @HoTen nvarchar(255),
+    @DiaChi nvarchar(255),
+    @NgaySinh date,
+	@SoDienThoai nvarchar(10),
+    @GioiTinh nvarchar(10)
+AS
+BEGIN
+    BEGIN TRY
+            UPDATE dbo.TaiKhoan
+				SET HoTen = @HoTen,
+					DiaChi = @DiaChi,
+					NgaySinh = @NgaySinh,
+					GioiTinh = @GioiTinh,
+					SoDienThoai = @SoDienThoai
+			 WHERE MaTaiKhoan = @MaTaiKhoan;
+    END TRY
+    BEGIN CATCH
+        DECLARE @err NVARCHAR(MAX)
+		SELECT @err = N'Lỗi' + ERROR_MESSAGE()
+		RAISERROR(@err, 16, 1)
+    END CATCH;
+END;
+
+GO
+/***	Add New Account		***/
+CREATE PROCEDURE SP_Add_New_Account
+	@MaTaiKhoan int,
+    @HoTen nvarchar(255),
+	@MatKhau nvarchar(255),
+    @DiaChi nvarchar(255),
+    @NgaySinh date,
+	@Email NVARCHAR(255),
+	@SoDienThoai NVARCHAR(10),
+	@VaiTro nvarchar(50),
+    @GioiTinh nvarchar(10)
+AS
+BEGIN
+    BEGIN TRY
+        INSERT INTO dbo.TaiKhoan (MaTaiKhoan, HoTen, MatKhau, DiaChi, Email, NgaySinh, SoDienThoai, VaiTro, GioiTinh)
+        VALUES (@MaTaiKhoan, @HoTen, @MatKhau, @DiaChi, @Email, @NgaySinh,@SoDienThoai, @VaiTro, @GioiTinh);       
+    END TRY
+    BEGIN CATCH
+        DECLARE @err NVARCHAR(MAX)
+		SELECT @err = N'Lỗi' + ERROR_MESSAGE()
+		RAISERROR(@err, 16, 1)
+    END CATCH;
+END;
+
+GO
+/***	Delete account		  ***/
+CREATE PROCEDURE SP_Delete_Account
+    @MaTaiKhoan int
+AS
+BEGIN
+    BEGIN TRY
+            DELETE dbo.TaiKhoan WHERE MaTaiKhoan = @MaTaiKhoan;       
+    END TRY
+    BEGIN CATCH
+        DECLARE @err NVARCHAR(MAX)
+		SELECT @err = N'Lỗi' + ERROR_MESSAGE()
+		RAISERROR(@err, 16, 1)
+    END CATCH;
+END;
+GO
+
+/***	Update account		***/
 CREATE PROCEDURE SP_Update_Account
 	@MaTaiKhoan int,
     @HoTen nvarchar(255),
@@ -88,76 +156,8 @@ BEGIN
 END;
 
 GO
-/***	Update profile(Phat)		***/
-CREATE PROCEDURE SP_Account_Profile
-	@MaTaiKhoan int,
-    @HoTen nvarchar(255),
-    @DiaChi nvarchar(255),
-    @NgaySinh date,
-	@SoDienThoai nvarchar(10),
-    @GioiTinh nvarchar(10)
-AS
-BEGIN
-    BEGIN TRY
-            UPDATE dbo.TaiKhoan
-				SET HoTen = @HoTen,
-					DiaChi = @DiaChi,
-					NgaySinh = @NgaySinh,
-					GioiTinh = @GioiTinh,
-					SoDienThoai = @SoDienThoai
-			 WHERE MaTaiKhoan = @MaTaiKhoan;
-    END TRY
-    BEGIN CATCH
-        DECLARE @err NVARCHAR(MAX)
-		SELECT @err = N'Lỗi' + ERROR_MESSAGE()
-		RAISERROR(@err, 16, 1)
-    END CATCH;
-END;
-
-GO
-/***	Add New Account(Phat)		***/
-CREATE PROCEDURE SP_Add_New_Account
-	@MaTaiKhoan int,
-    @HoTen nvarchar(255),
-	@MatKhau nvarchar(255),
-    @DiaChi nvarchar(255),
-    @NgaySinh date,
-	@Email NVARCHAR(255),
-	@SoDienThoai NVARCHAR(10),
-	@VaiTro nvarchar(50),
-    @GioiTinh nvarchar(10)
-AS
-BEGIN
-    BEGIN TRY
-        INSERT INTO dbo.TaiKhoan (MaTaiKhoan, HoTen, MatKhau, DiaChi, Email, NgaySinh, SoDienThoai, VaiTro, GioiTinh)
-        VALUES (@MaTaiKhoan, @HoTen, @MatKhau, @DiaChi, @Email, @NgaySinh,@SoDienThoai, @VaiTro, @GioiTinh);       
-    END TRY
-    BEGIN CATCH
-        DECLARE @err NVARCHAR(MAX)
-		SELECT @err = N'Lỗi' + ERROR_MESSAGE()
-		RAISERROR(@err, 16, 1)
-    END CATCH;
-END;
-
-GO
-/***	Delete account(Phat)		  ***/
-CREATE PROCEDURE SP_Delete_Account
-    @MaTaiKhoan int
-AS
-BEGIN
-    BEGIN TRY
-            DELETE dbo.TaiKhoan WHERE MaTaiKhoan = @MaTaiKhoan;       
-    END TRY
-    BEGIN CATCH
-        DECLARE @err NVARCHAR(MAX)
-		SELECT @err = N'Lỗi' + ERROR_MESSAGE()
-		RAISERROR(@err, 16, 1)
-    END CATCH;
-END;
-
-GO
 /***	Add new schedule (Phat)		***/
-CREATE OR ALTER PROCEDURE SP_Add_New_Schedule
+CREATE PROCEDURE SP_Add_New_Schedule
 (
 	@NgayLam date,
 	@Ca nvarchar(255),
@@ -178,7 +178,7 @@ END;
 
 GO
 /***	Update schedule (Phat)		***/
-CREATE OR ALTER PROCEDURE SP_Update_Schedule
+CREATE PROCEDURE SP_Update_Schedule
 (
 	@MaLichLamViec int,
 	@NgayLam date,
@@ -203,7 +203,7 @@ END;
 
 GO
 /***	Delete schedule (Phat)		***/
-CREATE OR ALTER PROCEDURE SP_Delete_Schedule
+CREATE PROCEDURE SP_Delete_Schedule
 (
 	@MaLichLamViec int
 )
@@ -221,7 +221,7 @@ END;
 
 GO
 /***	Add Books To Coupon (Phat)		***/
-CREATE OR ALTER PROCEDURE SP_Add_Books_To_Coupon
+CREATE PROCEDURE SP_Add_Books_To_Coupon
 (
 	@MaSach int,
 	@MaPhieuMuon int
@@ -241,7 +241,7 @@ END;
 
 GO
 /***	Update Book In Coupon (Phat)		***/
-CREATE OR ALTER PROCEDURE SP_Update_Book_In_Coupon
+CREATE PROCEDURE SP_Update_Book_In_Coupon
 (
 	@MaPhieuMuon int,
 	@MaSach int,
@@ -262,35 +262,9 @@ BEGIN
 END;
 
 GO
-/***	Find account by advanced (Phat)		***/
-CREATE OR ALTER PROCEDURE SP_Find_Account_By_Advanced
-(
-	@MaTaiKhoan int = NULL,
-    @HoTen nvarchar(255) = NULL,
-    @DiaChi nvarchar(255) = NULL,
-	@Email NVARCHAR(255) = NULL,
-	@SoDienThoai NVARCHAR(10) = NULL,
-	@VaiTro nvarchar(50) = NULL,
-    @GioiTinh nvarchar(10) = NULL
-)
-AS
-BEGIN
-	SELECT 
-		*
-	FROM VW_Account_List 
-	WHERE 
-		(@MaTaiKhoan IS NULL OR MaTaiKhoan = @MaTaiKhoan) AND
-		(@HoTen IS NULL OR HoTen LIKE '%' + @HoTen + '%') AND
-		(@DiaChi IS NULL OR DiaChi LIKE '%' + @DiaChi + '%') AND
-		(@Email IS NULL OR Email LIKE '%' + @Email + '%') AND
-		(@SoDienThoai IS NULL OR CAST(SoDienThoai AS VARCHAR) LIKE '%' + CAST(@SoDienThoai AS VARCHAR) + '%') AND
-		(@VaiTro IS NULL OR VaiTro = @VaiTro) AND
-		(@GioiTinh IS NULL OR GioiTinh = @GioiTinh) 
-END;
 
-GO
 /***	Get schedule (Phat)		***/
-CREATE OR ALTER PROCEDURE SP_Get_Schedule
+CREATE PROCEDURE SP_Get_Schedule
 (
 	@NgayDauTuan date = NULL,
 	@NgayCuoiTuan date = NULL,
@@ -307,7 +281,7 @@ END;
 
 GO
 /***	Add New Book(Van)		***/
-CREATE OR ALTER PROCEDURE SP_Add_New_Book
+CREATE PROCEDURE SP_Add_New_Book
     @MaTacGia INT,
 	@MaTheLoai INT,
     @MaNhaXuatBan INT,
@@ -331,7 +305,7 @@ END;
 
 GO
 /***	Update Book(Van)		***/
-CREATE OR ALTER PROCEDURE SP_Update_Book
+CREATE PROCEDURE SP_Update_Book
 	@MaTacGia INT,
 	@MaTheLoai INT,
     @MaNhaXuatBan INT,
@@ -363,7 +337,7 @@ END;
 
 GO
 /***	Find book by advanced (Van)		***/
-CREATE OR ALTER PROCEDURE SP_Find_Book_By_Advanced
+CREATE PROCEDURE SP_Find_Book_By_Advanced
 (
 	@TenTacGia NVARCHAR(255) = NULL,
 	@TenTheLoai NVARCHAR(255) = NULL,
@@ -388,7 +362,7 @@ END;
 
 GO
 /***	Delete book(Van)		***/
-CREATE OR ALTER PROCEDURE SP_Delete_Book
+CREATE PROCEDURE SP_Delete_Book
     @MaSach int
 AS
 BEGIN
@@ -404,7 +378,7 @@ END;
 
 GO
 /***	Add Tác Giả(Van)		***/
-CREATE OR ALTER PROCEDURE SP_Add_Tac_Gia
+CREATE PROCEDURE SP_Add_Tac_Gia
     @TenTacGia NVARCHAR(255)
 AS
 BEGIN
@@ -421,7 +395,7 @@ END;
 
 GO
 /***	Update Tác Giả(Van)		***/
-CREATE OR ALTER PROCEDURE SP_Update_Tac_Gia
+CREATE PROCEDURE SP_Update_Tac_Gia
     @MaTacGia INT,
     @TenTacGia NVARCHAR(255)
 AS
@@ -438,7 +412,7 @@ END;
 
 GO
 /***	Find TacGia by advanced (Van)		***/
-CREATE OR ALTER PROCEDURE SP_Find_TacGia
+CREATE PROCEDURE SP_Find_TacGia
 (
 	@TenTacGia NVARCHAR(255) = NULL
 )
@@ -449,7 +423,7 @@ END;
 
 GO
 /***	Delete tac gia(Van)		***/
-CREATE OR ALTER PROCEDURE SP_Delete_TacGia
+CREATE PROCEDURE SP_Delete_TacGia
     @MaTacGia int
 AS
 BEGIN
@@ -465,7 +439,7 @@ END;
 
 GO
 /* Thêm thể loại (Hoàn) */
-CREATE OR ALTER PROCEDURE SP_Add_New_TheLoai
+CREATE PROCEDURE SP_Add_New_TheLoai
     @TenTheLoai nvarchar(50)
 AS
 BEGIN
@@ -482,7 +456,7 @@ END;
 
 GO
 /* Xoá thể loại (Hoàn) */
-CREATE OR ALTER PROCEDURE SP_Delete_TheLoai
+CREATE PROCEDURE SP_Delete_TheLoai
     @MaTheLoai int
 AS
 BEGIN
@@ -498,7 +472,7 @@ END;
 
 GO
 /* Sửa thể loại (Hoàn)*/
-CREATE OR ALTER PROCEDURE SP_Update_TheLoai
+CREATE PROCEDURE SP_Update_TheLoai
 	@MaTheLoai int,
     @TenTheLoai nvarchar(50)
 AS
@@ -517,7 +491,7 @@ END;
 
 GO
 /* Tìm kiếm thể loại (Hoàn)*/
-CREATE OR ALTER PROCEDURE SP_Find_TheLoai
+CREATE PROCEDURE SP_Find_TheLoai
 (
     @TenTheLoai nvarchar(255) = NULL
 )
@@ -528,7 +502,7 @@ END;
 
 go
 /***	Find Book Loan Coupon by status (Phat)		***/
-CREATE OR ALTER PROCEDURE SP_Find_Book_Loan_Coupon_By_Status
+CREATE PROCEDURE SP_Find_Book_Loan_Coupon_By_Status
 (
 	@type int
 )
@@ -544,7 +518,7 @@ END;
 
 GO
 /***	Add New Book Loan Coupon(Phat)		***/
-CREATE OR ALTER PROCEDURE SP_Add_New_Book_Loan_Coupon
+CREATE PROCEDURE SP_Add_New_Book_Loan_Coupon
     @MaTaiKhoan int = NULL,
     @NgayMuon date = NULL,
     @NgayTra date = NULL
@@ -569,7 +543,7 @@ END;
 
 GO
 /***	Delete coupon(Phat)		***/
-CREATE OR ALTER PROCEDURE SP_Delete_Coupon
+CREATE PROCEDURE SP_Delete_Coupon
     @MaPhieuMuon int
 AS
 BEGIN
@@ -598,7 +572,7 @@ END;
 
 GO
 /***	Update coupon(Phat)		***/
-CREATE OR ALTER PROCEDURE SP_Update_Coupon
+CREATE PROCEDURE SP_Update_Coupon
 	@MaPhieuMuon int,
 	@MaTaiKhoan int,
     @MaSach int,
@@ -630,7 +604,7 @@ END;
 
 GO
 /***	Update coupon _ Returned(Phat)		***/
-CREATE OR ALTER PROCEDURE SP_Update_Coupon_Returned
+CREATE PROCEDURE SP_Update_Coupon_Returned
     @MaPhieuMuon INT
 AS
 BEGIN
@@ -724,7 +698,7 @@ END;
 
 GO
 /***	Find Book Loan Coupon (Phat)		***/
-CREATE OR ALTER PROCEDURE SP_Find_Account_Book_Loan_Coupon
+CREATE PROCEDURE SP_Find_Account_Book_Loan_Coupon
 (
 	@MaTaiKhoan int
 )
@@ -739,7 +713,7 @@ END;
 GO
 /***	Add NXB (Trung)		***/
 
-CREATE OR ALTER PROCEDURE SP_Add_New_NXB
+CREATE PROCEDURE SP_Add_New_NXB
 	@TenNhaXuatBan NVARCHAR(255)
 AS
 BEGIN
@@ -755,7 +729,7 @@ BEGIN
 END;
 go
 /***	Update NXB (Trung)		***/
-CREATE OR ALTER PROCEDURE SP_Update_NXB
+CREATE PROCEDURE SP_Update_NXB
 	@MaNhaXuatBan INT,
 	@TenNhaXuatBan NVARCHAR(255)
 AS
@@ -773,7 +747,7 @@ BEGIN
 END;
 GO
 /***	Find NXB (Trung)		***/
-CREATE OR ALTER PROCEDURE SP_Find_NXB
+CREATE PROCEDURE SP_Find_NXB
 (
 	@TenNhaXuatBan NVARCHAR(255) = NULL
 )
@@ -787,7 +761,7 @@ END;
 
 GO
 /***	Delete NXB (Trung)		***/
-CREATE OR ALTER PROCEDURE SP_Delete_NXB
+CREATE PROCEDURE SP_Delete_NXB
 	@MaNhaXuatBan INT,
 	@TenNhaXuatBan NVARCHAR(255)
 AS

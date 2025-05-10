@@ -90,6 +90,7 @@
             this.btnTaiKhoan.TabIndex = 0;
             this.btnTaiKhoan.Text = "Tài khoản";
             this.btnTaiKhoan.UseVisualStyleBackColor = false;
+            this.btnTaiKhoan.Click += new System.EventHandler(this.btnTaiKhoan_Click);
             // 
             // panel2
             // 
@@ -112,6 +113,7 @@
             this.btnPhieu.TabIndex = 0;
             this.btnPhieu.Text = "Phiếu mượn/trả";
             this.btnPhieu.UseVisualStyleBackColor = false;
+            this.btnPhieu.Click += new System.EventHandler(this.btnPhieu_Click);
             // 
             // panel7
             // 
@@ -134,6 +136,7 @@
             this.btnSach.TabIndex = 0;
             this.btnSach.Text = "Sách";
             this.btnSach.UseVisualStyleBackColor = false;
+            this.btnSach.Click += new System.EventHandler(this.btnSach_Click);
             // 
             // panel5
             // 
@@ -156,6 +159,7 @@
             this.btnThongKe.TabIndex = 0;
             this.btnThongKe.Text = "Báo cáo thống kê";
             this.btnThongKe.UseVisualStyleBackColor = false;
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
             // panel6
             // 
@@ -206,6 +210,7 @@
             this.btnLogout.TabIndex = 0;
             this.btnLogout.Text = "Đăng xuất";
             this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // pnlMain
             // 
