@@ -62,6 +62,34 @@ namespace DAO
             return data;
         }
 
+
+        public DataTable LoadSachByName(string TenSach)
+        {
+            string query = "exec SP_TimKiemSachTheoTenSach @TenSach";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { TenSach });
+            return data;
+        }
+        public DataTable LoadSachByTheLoai(string TenTheLoai)
+        {
+            string query = "exec SP_TimKiemSachTheoTheLoai @TenTheLoai";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { TenTheLoai });
+            return data;
+        }
+
+
+        public DataTable LoadSachByNhaXuatBan(int MaNhaXuatBan)
+        {
+            string query = "exec SP_TimKiemSachTheoMaNhaXuatBan1 @MaNhaXuatBan";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { MaNhaXuatBan });
+            return data;
+        }
+
+        public DataTable LoadSachByTacGia(int MaTacGia)
+        {
+            string query = "exec SP_TimKiemSachTheoMaTacGia @MaTacGia";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { MaTacGia });
+            return data;
+        }
         public void DeleteBook(int maSach)
         {
             string query = "SP_Delete_Book @MaSach ";
@@ -143,5 +171,7 @@ namespace DAO
             object total = DataProvider.Instance.ExecuteScalar(query);
             return (int)total;
         }
+
+
     }
 }

@@ -22,7 +22,7 @@ namespace DAO
             }
         }
 
-        string ConnStr = "Data Source=LAPTOP-L7BVASSV\\MAY1;Initial Catalog=QLTV;Integrated Security=True;TrustServerCertificate=True";
+        string ConnStr = "Data Source=LAPTOP-3EVRR5L8;Initial Catalog=ManageLibrary;Integrated Security=True";
         SqlConnection conn = null;
         SqlCommand comm = null;
         SqlDataAdapter da = null;

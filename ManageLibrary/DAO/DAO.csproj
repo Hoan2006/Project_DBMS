@@ -43,10 +43,12 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="DataProvider.cs" />
+    <Compile Include="MuonSachDAO.cs" />
     <Compile Include="NhaXuatBanDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SachDAO.cs" />
     <Compile Include="TacGiaDAO.cs" />
+    <Compile Include="TaiKhoanDAO.cs" />
     <Compile Include="TheLoaiDAO.cs" />
   </ItemGroup>
   <ItemGroup>

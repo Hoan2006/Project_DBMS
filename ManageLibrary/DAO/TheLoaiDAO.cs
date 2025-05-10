@@ -69,5 +69,7 @@ namespace LibraryManagement.DAO
             DataTable total = DataProvider.Instance.ExecuteQuery(query);
             return total;
         }
+
+
     }
 }

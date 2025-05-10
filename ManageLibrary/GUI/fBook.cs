@@ -636,5 +636,10 @@ namespace GUI
             }
             previousCell = dgvNhaXuatBan.Rows[e.RowIndex].Cells[e.ColumnIndex];
         }
+
+        private void dgvSach_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

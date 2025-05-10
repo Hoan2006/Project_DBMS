@@ -64,6 +64,18 @@
     <Compile Include="fCoupon.Designer.cs">
       <DependentUpon>fCoupon.cs</DependentUpon>
     </Compile>
+    <Compile Include="fGlobalLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fGlobalLogin.Designer.cs">
+      <DependentUpon>fGlobalLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fGlobalRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fGlobalRegister.Designer.cs">
+      <DependentUpon>fGlobalRegister.cs</DependentUpon>
+    </Compile>
     <Compile Include="fHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +87,24 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fReaderLichSuMuonSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fReaderLichSuMuonSach.Designer.cs">
+      <DependentUpon>fReaderLichSuMuonSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fReaderQuanLyTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fReaderQuanLyTaiKhoan.Designer.cs">
+      <DependentUpon>fReaderQuanLyTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fReaderTraSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fReaderTraSach.Designer.cs">
+      <DependentUpon>fReaderTraSach.cs</DependentUpon>
     </Compile>
     <Compile Include="fSearchAccountUtil.cs">
       <SubType>Form</SubType>
@@ -99,8 +129,23 @@
     <EmbeddedResource Include="fCoupon.resx">
       <DependentUpon>fCoupon.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fGlobalLogin.resx">
+      <DependentUpon>fGlobalLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fGlobalRegister.resx">
+      <DependentUpon>fGlobalRegister.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fHome.resx">
       <DependentUpon>fHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fReaderLichSuMuonSach.resx">
+      <DependentUpon>fReaderLichSuMuonSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fReaderQuanLyTaiKhoan.resx">
+      <DependentUpon>fReaderQuanLyTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fReaderTraSach.resx">
+      <DependentUpon>fReaderTraSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fSearchAccountUtil.resx">
       <DependentUpon>fSearchAccountUtil.cs</DependentUpon>
