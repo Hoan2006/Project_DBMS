@@ -55,8 +55,8 @@ namespace LibraryManagement.DAO
             }
         }
 
-public bool CheckLogin(string email, string password)
-        {
+            public bool CheckLogin(string email, string password)
+            {
             string query = "exec SP_Login @Email , @MatKhau";
             DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { email, password });
             if (data.Rows.Count > 0)
@@ -65,9 +65,21 @@ public bool CheckLogin(string email, string password)
                 
             }
             return false;
+            }
+    
+
+        public TaiKhoan GetTaiKhoanByEmail(string email)
+        {
+            string query = "EXEC SP_Get_Account_Profile @Email";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { email });
+            if (data.Rows.Count > 0)
+            {
+                return new TaiKhoan(data.Rows[0]);
+            }
+            return null;
         }
-    }
-}
+
+
         public bool Login(string email, string matKhau)
         {
             string query = "SP_Login @Email , @MatKhau ";
