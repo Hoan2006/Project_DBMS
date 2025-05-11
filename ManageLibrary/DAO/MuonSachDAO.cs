@@ -26,5 +26,28 @@ namespace DAO
             return data;
         }
 
+        public bool MuonSach(int maTaiKhoan, int maSach, DateTime ngayMuon, DateTime ngayTra)
+        {
+            try
+            { 
+                string query = "exec SP_Reader_MuonSach @MaTaiKhoan , @MaSach , @NgayMuon , @NgayTra";
+                int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { maTaiKhoan, maSach, ngayMuon, ngayTra });
+                return result > 0;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+                return false;
+            }
+        }
+
+
+        public bool UpdateTraSach(int maPhieuMuon)
+        {
+            string query = "exec SP_UpdateTraSach @MaPhieuMuon";
+            int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { maPhieuMuon });
+            return result > 0;
+
+        }
     }
 }

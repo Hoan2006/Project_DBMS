@@ -116,9 +116,21 @@ namespace GUI
             if (success)
             {
                 MessageBox.Show("Đăng ký thành công!");
-                fReaderLichSuMuonSach f = new fReaderLichSuMuonSach();
+                
                 this.Hide();
-                f.ShowDialog();
+                
+
+                if(vaitro == "DocGia")
+                {
+                    fReaderHome f = new fReaderHome();
+                    f.ShowDialog();
+                }
+                else
+                {
+                    fHome f = new fHome();
+                    f.ShowDialog();
+                }
+
                 this.Close();
             }
             else

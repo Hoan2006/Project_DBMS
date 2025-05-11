@@ -92,7 +92,7 @@ namespace GUI
             cbbGioiTinh.Enabled = true; // Không cho chỉnh sửa giới tính
             txbVaiTro.Enabled = false; // Không cho chỉnh sửa vai trò
         }
-        
+
 
         private void btnHuy_Click(object sender, EventArgs e)
         {
@@ -106,7 +106,7 @@ namespace GUI
             string hoten = txbHoTen.Text;
             string sodienthoai = txbSoDienThoai.Text;
             DateTime ngaysinh = dtpNgaySinh.Value;
-           
+
             string diachi = txbDiaChi.Text;
             string gioitinh = cbbGioiTinh.SelectedItem.ToString();
             int mataikhoan = int.Parse(txbMaTaiKhoan.Text);
@@ -124,6 +124,13 @@ namespace GUI
             {
                 MessageBox.Show("Cập nhật thông tin thất bại!");
             }
+        }
+
+        private void btnDoiMatKhau_Click(object sender, EventArgs e)
+        {
+            fReaderDoiMatKhau f = new fReaderDoiMatKhau();
+            f.ShowDialog();
+
         }
     }
 }

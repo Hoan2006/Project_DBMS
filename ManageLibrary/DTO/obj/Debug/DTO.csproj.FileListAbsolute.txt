@@ -1,0 +1,6 @@
+C:\Users\tuite\Documents\PRJ_DBMS\Project_DBMS\ManageLibrary\DTO\bin\Debug\DTO.dll
+C:\Users\tuite\Documents\PRJ_DBMS\Project_DBMS\ManageLibrary\DTO\bin\Debug\DTO.pdb
+C:\Users\tuite\Documents\PRJ_DBMS\Project_DBMS\ManageLibrary\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\tuite\Documents\PRJ_DBMS\Project_DBMS\ManageLibrary\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\tuite\Documents\PRJ_DBMS\Project_DBMS\ManageLibrary\DTO\obj\Debug\DTO.dll
+C:\Users\tuite\Documents\PRJ_DBMS\Project_DBMS\ManageLibrary\DTO\obj\Debug\DTO.pdb

@@ -49,14 +49,14 @@ namespace GUI
                 if (taiKhoan.VaiTro == "DocGia")
                 {
                     this.Hide();
-                    fReaderLichSuMuonSach f = new fReaderLichSuMuonSach();
+                    fReaderHome f = new fReaderHome();
                     f.ShowDialog();
                     this.Close();
                 }
                 else
                 {
                     this.Hide();
-                    fReaderQuanLyTaiKhoan f = new fReaderQuanLyTaiKhoan();
+                    fHome f = new fHome();
                     f.ShowDialog();
                     this.Close();
                 }

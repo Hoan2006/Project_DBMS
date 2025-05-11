@@ -211,6 +211,7 @@
             this.btnDoiMatKhau.TabIndex = 34;
             this.btnDoiMatKhau.Text = "Đổi mật khẩu";
             this.btnDoiMatKhau.UseVisualStyleBackColor = false;
+            this.btnDoiMatKhau.Click += new System.EventHandler(this.btnDoiMatKhau_Click);
             // 
             // btnSuaThongTin
             // 
@@ -308,6 +309,7 @@
             this.Controls.Add(this.txbEmail);
             this.Controls.Add(this.txbMaTaiKhoan);
             this.Controls.Add(this.txbHoTen);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fReaderQuanLyTaiKhoan";
             this.Text = "fReaderQuanLyTaiKhoan";
             this.ResumeLayout(false);
