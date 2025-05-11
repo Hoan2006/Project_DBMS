@@ -35,7 +35,7 @@ namespace GUI
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            this.Close();
+            LoadForm(new fGlobalLogin());
         }
 
         private void btnPhieu_Click(object sender, EventArgs e)

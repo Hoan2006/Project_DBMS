@@ -56,7 +56,7 @@ namespace GUI
                 else
                 {
                     this.Hide();
-                    fReaderQuanLyTaiKhoan f = new fReaderQuanLyTaiKhoan();
+                    fHome f = new fHome();
                     f.ShowDialog();
                     this.Close();
                 }

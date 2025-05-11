@@ -1,29 +1,12 @@
-﻿/***	Get account list (Phat)		***/
+﻿-- Get account list
 CREATE VIEW VW_Account_List AS
-SELECT 	
+SELECT
 	*
 FROM dbo.TaiKhoan 
 
 GO
-/***	Get shift list (Phat)		***/
-CREATE VIEW VW_Schedule_List AS
-SELECT 
-	MaLichLamViec, NgayLam, Ca, Tk.MaTaiKhoan, TK.HoTen, TK.SoDienThoai, TK.GioiTinh
-FROM dbo.LichLamViec LLV
-JOIN dbo.TaiKhoan TK ON TK.MaTaiKhoan = LLV.MaTaiKhoan
 
-GO
-/***	Get Librarian list (Phat)		***/
-CREATE VIEW VW_Librarian_List AS
-SELECT 
-	MaTaiKhoan, 
-	HoTen 
-FROM dbo.TaiKhoan
-WHERE VaiTro = N'Thủ thư'
-
-
-GO
-/***	Get Sách list (Văn)		***/
+-- Get Sách list
 CREATE VIEW VW_Book_List AS
 SELECT 
     S.MaSach, 
@@ -45,26 +28,27 @@ INNER JOIN
     NhaXuatBan NXB ON S.MaNhaXuatBan = NXB.MaNhaXuatBan;
 
 GO
-/***	Get Nhà Xuất Bản list (Văn)		***/
+
+-- Get Nhà Xuất Bản list
 CREATE VIEW VW_NhaXuatBan_List AS
 SELECT *
 FROM dbo.NhaXuatBan
 
 GO
-/***	Get Thể Loại list (Hoàn)		***/
+-- Get Thể Loại list
 CREATE VIEW VW_TheLoai_List AS
 SELECT *
 FROM dbo.TheLoai
 
 GO
-/***	Get Tác Giả list (Văn)		***/
+-- Get Tác Giả list
 CREATE VIEW VW_TacGia_List AS
 SELECT *
 FROM dbo.TacGia
 
 GO
 
-/***	Get Book Loan Coupon list (Trung)		***/
+-- Get Phiếu Mượn list
 Create VIEW VW_Book_Loan_Coupon_List AS
 SELECT 
 	*

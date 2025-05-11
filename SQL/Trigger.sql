@@ -1,4 +1,4 @@
-﻿/***	Not duplicate phone number (Phat)		***/
+﻿-- Trigger không cho trùng phone
 CREATE TRIGGER TR_Not_Duplicate_Phone_Number
 ON dbo.TaiKhoan
 AFTER INSERT, UPDATE
@@ -19,52 +19,7 @@ BEGIN
 END;
 
 GO
-/***	Librarian not working over 48h/week (Phat)		***/
-CREATE TRIGGER TR_Limit_Working_Hours
-ON dbo.LichLamViec
-AFTER INSERT, UPDATE
-AS
-BEGIN
-    DECLARE @MaTaiKhoan INT;
-	DECLARE @NgayLam Date;
-    DECLARE @TotalHours INT;
-    --Một Ca tính là 4 giờ
-    SELECT @MaTaiKhoan = MaTaiKhoan, 
-			@NgayLam = NgayLam
-	FROM inserted;
-    
-    SELECT @TotalHours = dbo.FN_Total_Working_Hours(@MaTaiKhoan, @NgayLam)
-
-    IF @TotalHours > 40
-    BEGIN
-        RAISERROR ('The total working hours exceed the limit of 40 hours per week for a Librarian.', 16, 1);
-        ROLLBACK TRANSACTION;
-    END
-END;
-
-GO
-/***	An Librarian can not duplicate Working day(Phat)		***/
-CREATE TRIGGER TR_Not_Duplicate_Working_Days
-ON dbo.LichLamViec
-AFTER INSERT, UPDATE
-AS
-BEGIN
-    DECLARE @MaTaiKhoan INT;
-	DECLARE @MaLichLamViec INT;
-	DECLARE @NgayLam Date;
-	DECLARE @Ca NVARCHAR(255);
-
-    SELECT @MaTaiKhoan = MaTaiKhoan, @NgayLam = NgayLam, @Ca = Ca, @MaLichLamViec=MaLichLamViec FROM inserted;
-    
-    IF EXISTS (SELECT * FROM dbo.LichLamViec WHERE(MaTaiKhoan = @MaTaiKhoan AND NgayLam = @NgayLam AND Ca = @Ca AND @MaLichLamViec<>MaLichLamViec))
-    BEGIN
-        RAISERROR ('A working day can not be duplicate.', 16, 1);
-        ROLLBACK TRANSACTION;
-    END
-END;
-
-GO
-/***	Update book quantity if borrowed (Phat)		***/
+-- Trigger cập nhật số lượng sách khi mượn
 CREATE TRIGGER TR_Not_Update_Books_Quantity_After_Borrowed
 ON dbo.CuonSach
 AFTER INSERT, UPDATE
@@ -82,10 +37,81 @@ BEGIN
 END;
 
 GO
-/* Trigger không cho tạo, cập nhật thể loại trùng*/
+
+-- Trigger không cho xóa thể loại nếu có sách thuộc thể loại đó
+CREATE TRIGGER TR_Prevent_Delete_TheLoai
+ON TheLoai
+INSTEAD OF DELETE
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    IF EXISTS (
+        SELECT 1
+        FROM Sach s
+        INNER JOIN deleted d ON s.MaTheLoai = d.MaTheLoai
+        WHERE s.MaTheLoai IS NOT NULL
+    )
+    BEGIN
+        RAISERROR('Không thể xóa thể loại vì còn tồn tại sách thuộc thể loại này.', 16, 1);
+        RETURN;
+    END
+    ELSE
+    BEGIN
+        DELETE FROM TheLoai
+        WHERE MaTheLoai IN (SELECT MaTheLoai FROM deleted);
+    END
+END;
+GO
+
+-- Trigger không cho xóa tác giả nếu có sách thuộc tác giả đó
+CREATE TRIGGER TR_Prevent_Delete_TacGia
+ON TacGia
+AFTER DELETE
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    IF EXISTS (
+        SELECT 1
+        FROM Sach s
+        INNER JOIN deleted d ON s.MaTacGia = d.MaTacGia
+        WHERE s.MaTacGia IS NOT NULL
+    )
+    BEGIN
+        RAISERROR('Không thể xóa tác giả vì còn tồn tại sách thuộc tác giả này.', 16, 1);
+        ROLLBACK TRANSACTION;
+        RETURN;
+    END
+END;
+GO
+
+-- Trigger không cho xóa nxb nếu có sách thuộc nxb đó
+CREATE TRIGGER TR_Prevent_Delete_NXB
+ON NhaXuatBan
+AFTER DELETE
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    IF EXISTS (
+        SELECT 1
+        FROM Sach s
+        INNER JOIN deleted d ON s.MaNhaXuatBan = d.MaNhaXuatBan
+        WHERE s.MaNhaXuatBan IS NOT NULL
+    )
+    BEGIN
+        RAISERROR('Không thể xóa nhà xuất bản vì còn tồn tại sách thuộc nhà xuất bản này.', 16, 1);
+        ROLLBACK TRANSACTION;
+        RETURN;
+    END
+END;
+GO
+
+-- Trigger không cho tạo thể loại trùng
 CREATE TRIGGER TR_Prevent_duplicate_category 
 ON TheLoai
-AFTER INSERT, UPDATE
+AFTER INSERT
 AS
 BEGIN
     IF EXISTS (
@@ -94,18 +120,16 @@ BEGIN
         JOIN INSERTED i ON t.TenTheLoai = i.TenTheLoai WHERE t.MaTheLoai<>i.MaTheLoai
     )
     BEGIN
-        RAISERROR('Không thể thêm hoặc cập nhật vì đã tồn tại thể loại có cùng tên.', 16, 1);
+        RAISERROR('Không được tạo thể loại trùng với thể loại có sẵn.', 16, 1);
         ROLLBACK TRANSACTION;
     END;
 END; 
 
-GO 
-
 GO
-/* Trigger không cho tạo, cập nhật sách trùng*/
+-- Trigger không cho tạo sách trùng
 CREATE TRIGGER TR_Prevent_duplicate_Book
 ON dbo.Sach
-AFTER INSERT, UPDATE
+AFTER INSERT
 AS
 BEGIN
 	IF EXISTS (
@@ -122,31 +146,30 @@ BEGIN
 			S.GiaSach = i.GiaSach AND
 			S.MaSach<>i.MaSach)
 	BEGIN
-		RAISERROR('Không tạo trùng tựa sách', 16, 1);
+		RAISERROR('Không được tạo sách trùng với sách có sẵn.', 16, 1);
 		ROLLBACK TRANSACTION;
 	END;
 END;
 
 GO
-/* Trigger không cho tạo, cập nhật tác giả trùng (Phat)*/
+-- Trigger không cho tạo tác giả trùng
 CREATE TRIGGER TR_Prevent_duplicate_Author
 ON dbo.TacGia
-AFTER INSERT, UPDATE
+AFTER INSERT
 AS
 BEGIN
     IF EXISTS (SELECT 1 FROM TacGia TG JOIN inserted i ON TG.TenTacGia = i.TenTacGia AND TG.MaTacGia <> i.MaTacGia)
     BEGIN
-        -- Hủy thao tác INSERT hoặc UPDATE nếu dữ liệu bị trùng
         ROLLBACK TRANSACTION;
-        RAISERROR('Không thể thêm tác giả trùng tên!', 16, 1);
+        RAISERROR('Không được tạo tác giả trùng tên với tác giả có sẵn.', 16, 1);
     END
 END
 
 GO
---Trigger Check Duplicates_NXB(Trung)--
+-- Trigger không cho tạo NXB trùng
 CREATE OR ALTER TRIGGER TR_Prevent_Publisher_Duplicate
 ON dbo.NhaXuatBan
-AFTER INSERT, UPDATE
+AFTER INSERT
 AS
 BEGIN
     SET NOCOUNT ON;
@@ -158,7 +181,7 @@ BEGIN
                 WHERE p.TenNhaXuatBan = i.TenNhaXuatBan) > 1
     )
     BEGIN
-        RAISERROR('Không được trùng tên nhà xuất bản.', 16, 1);
+        RAISERROR('Không được tạo nhà xuất bản trùng với nhà xuất bản có sẵn.', 16, 1);
         ROLLBACK TRANSACTION;
     END;
 END;
