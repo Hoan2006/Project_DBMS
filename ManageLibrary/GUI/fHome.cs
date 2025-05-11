@@ -40,7 +40,7 @@ namespace GUI
 
         private void btnPhieu_Click(object sender, EventArgs e)
         {
-            LoadForm(new fCoupon());
+            LoadForm(new fQuanLyPhieuMuon());
         }
 
         private void btnSach_Click(object sender, EventArgs e)

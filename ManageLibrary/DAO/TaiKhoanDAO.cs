@@ -80,6 +80,14 @@ namespace LibraryManagement.DAO
         }
 
 
+        public DataTable GetAllMaTaiKhoan()
+        {
+            string query = "select* from VW_GetAllMaTaiKhoan;";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+            return data;
+        }
+
+
         public bool Login(string email, string matKhau)
         {
             string query = "SP_Login @Email , @MatKhau ";
@@ -117,6 +125,8 @@ namespace LibraryManagement.DAO
             string query = "SP_Change_Account_Password @Email , @MatKhauMoi , @XacNhan , @MatKhauCu ";
 
             int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { email, newPass, confirm, oldPass });
+
+
 
             return result > 0;
         }

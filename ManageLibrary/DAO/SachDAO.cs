@@ -24,6 +24,8 @@ namespace DAO
         }
         public DataTable LoadBookList()
         {
+           
+
             string query = "SELECT * FROM VW_Book_List";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
             return data;

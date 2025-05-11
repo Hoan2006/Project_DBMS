@@ -28,54 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fReaderLichSuMuonSach));
             this.dgvLichSuMuonSach = new System.Windows.Forms.DataGridView();
-            this.btnLocTheoTinhTrang = new System.Windows.Forms.Button();
-            this.cbbLocTheoTinhTrang = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.MaPhieuMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayTra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenTacGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NamXuatBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GiaSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TinhTrang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLichSuMuonSach)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvLichSuMuonSach
             // 
+            this.dgvLichSuMuonSach.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvLichSuMuonSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLichSuMuonSach.Location = new System.Drawing.Point(12, 115);
+            this.dgvLichSuMuonSach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaPhieuMuon,
+            this.NgayMuon,
+            this.NgayTra,
+            this.TenSach,
+            this.TenTacGia,
+            this.NamXuatBan,
+            this.GiaSach,
+            this.TinhTrang});
+            this.dgvLichSuMuonSach.Location = new System.Drawing.Point(12, 72);
             this.dgvLichSuMuonSach.Name = "dgvLichSuMuonSach";
             this.dgvLichSuMuonSach.RowHeadersWidth = 51;
             this.dgvLichSuMuonSach.RowTemplate.Height = 24;
-            this.dgvLichSuMuonSach.Size = new System.Drawing.Size(785, 331);
+            this.dgvLichSuMuonSach.Size = new System.Drawing.Size(987, 441);
             this.dgvLichSuMuonSach.TabIndex = 0;
-            // 
-            // btnLocTheoTinhTrang
-            // 
-            this.btnLocTheoTinhTrang.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnLocTheoTinhTrang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnLocTheoTinhTrang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLocTheoTinhTrang.Image = ((System.Drawing.Image)(resources.GetObject("btnLocTheoTinhTrang.Image")));
-            this.btnLocTheoTinhTrang.Location = new System.Drawing.Point(351, 79);
-            this.btnLocTheoTinhTrang.Name = "btnLocTheoTinhTrang";
-            this.btnLocTheoTinhTrang.Size = new System.Drawing.Size(31, 27);
-            this.btnLocTheoTinhTrang.TabIndex = 70;
-            this.btnLocTheoTinhTrang.UseVisualStyleBackColor = false;
-            // 
-            // cbbLocTheoTinhTrang
-            // 
-            this.cbbLocTheoTinhTrang.FormattingEnabled = true;
-            this.cbbLocTheoTinhTrang.Location = new System.Drawing.Point(137, 82);
-            this.cbbLocTheoTinhTrang.Name = "cbbLocTheoTinhTrang";
-            this.cbbLocTheoTinhTrang.Size = new System.Drawing.Size(208, 24);
-            this.cbbLocTheoTinhTrang.TabIndex = 69;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(9, 85);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(128, 17);
-            this.label8.TabIndex = 68;
-            this.label8.Text = "Lọc theo trạng thái";
             // 
             // label1
             // 
@@ -88,16 +72,70 @@
             this.label1.TabIndex = 71;
             this.label1.Text = "Kiểm tra lịch sử mượn sách";
             // 
+            // MaPhieuMuon
+            // 
+            this.MaPhieuMuon.DataPropertyName = "MaPhieuMuon";
+            this.MaPhieuMuon.HeaderText = "Mã Phiếu Mượn";
+            this.MaPhieuMuon.MinimumWidth = 6;
+            this.MaPhieuMuon.Name = "MaPhieuMuon";
+            // 
+            // NgayMuon
+            // 
+            this.NgayMuon.DataPropertyName = "NgayMuon";
+            this.NgayMuon.HeaderText = "Ngày Mượn";
+            this.NgayMuon.MinimumWidth = 6;
+            this.NgayMuon.Name = "NgayMuon";
+            // 
+            // NgayTra
+            // 
+            this.NgayTra.DataPropertyName = "NgayTra";
+            this.NgayTra.HeaderText = "Ngày Trả";
+            this.NgayTra.MinimumWidth = 6;
+            this.NgayTra.Name = "NgayTra";
+            // 
+            // TenSach
+            // 
+            this.TenSach.DataPropertyName = "TenSach";
+            this.TenSach.HeaderText = "Tên Sách";
+            this.TenSach.MinimumWidth = 6;
+            this.TenSach.Name = "TenSach";
+            // 
+            // TenTacGia
+            // 
+            this.TenTacGia.DataPropertyName = "TenTacGia";
+            this.TenTacGia.HeaderText = "Tên Tác Giả";
+            this.TenTacGia.MinimumWidth = 6;
+            this.TenTacGia.Name = "TenTacGia";
+            // 
+            // NamXuatBan
+            // 
+            this.NamXuatBan.DataPropertyName = "NamXuatBan";
+            this.NamXuatBan.HeaderText = "Năm Xuất Bản";
+            this.NamXuatBan.MinimumWidth = 6;
+            this.NamXuatBan.Name = "NamXuatBan";
+            // 
+            // GiaSach
+            // 
+            this.GiaSach.DataPropertyName = "GiaSach";
+            this.GiaSach.HeaderText = "Giá Sách";
+            this.GiaSach.MinimumWidth = 6;
+            this.GiaSach.Name = "GiaSach";
+            // 
+            // TinhTrang
+            // 
+            this.TinhTrang.DataPropertyName = "TinhTrang";
+            this.TinhTrang.HeaderText = "Tình Trạng";
+            this.TinhTrang.MinimumWidth = 6;
+            this.TinhTrang.Name = "TinhTrang";
+            // 
             // fReaderLichSuMuonSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1011, 534);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnLocTheoTinhTrang);
-            this.Controls.Add(this.cbbLocTheoTinhTrang);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.dgvLichSuMuonSach);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fReaderLichSuMuonSach";
             this.Text = "fReaderLichSuMuonSach";
             ((System.ComponentModel.ISupportInitialize)(this.dgvLichSuMuonSach)).EndInit();
@@ -109,9 +147,14 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvLichSuMuonSach;
-        private System.Windows.Forms.Button btnLocTheoTinhTrang;
-        private System.Windows.Forms.ComboBox cbbLocTheoTinhTrang;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaPhieuMuon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayMuon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayTra;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenSach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenTacGia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NamXuatBan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GiaSach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TinhTrang;
     }
 }

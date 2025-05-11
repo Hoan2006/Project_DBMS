@@ -133,5 +133,23 @@ namespace GUI
         }
 
 
+        public void btnMuonSach_Click(object sender, EventArgs e)
+        {
+            int maSach = (int)nudMasachdachon.Value;
+            int maTaiKhoan = Session.loginAccount.MaTaiKhoan;
+            DateTime ngayMuon = dtpNgayMuon.Value; // Ngày mượn từ DateTimePicker
+            DateTime ngayTra = dtpNgayTra.Value; // Giả sử thời gian trả là 7 ngày sau
+            if (MuonSachDAO.Instance.MuonSach(maTaiKhoan, maSach, ngayMuon, ngayTra))
+            {
+                MessageBox.Show("Mượn sách thành công!");
+                Load_Data();
+            }
+            else
+            {
+                MessageBox.Show("Mượn sách thất bại!");
+            }
+        }
+
+
     }
 }

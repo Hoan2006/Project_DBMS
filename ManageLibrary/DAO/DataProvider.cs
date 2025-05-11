@@ -9,161 +9,127 @@ namespace DAO
     public class DataProvider
     {
         private static DataProvider instance;
-
         public static DataProvider Instance
         {
-            get
-            {
-                if (instance == null)
-                {
-                    instance = new DataProvider();
-                }
-                return instance;
-            }
+            get { if (instance == null) instance = new DataProvider(); return DataProvider.instance; }
+            private set { DataProvider.instance = value; }
         }
 
-        string ConnStr = "Data Source=LAPTOP-L7BVASSV\\MAY1;Initial Catalog=QLTV;Integrated Security=True;TrustServerCertificate=True";
-        SqlConnection conn = null;
-        SqlCommand comm = null;
-        SqlDataAdapter da = null;
+        private DataProvider() { }
+        //Đường dẫn
+        //(Phat)    Data Source=LAPTOP-M3L0LSMS;Initial Catalog=Library;Integrated Security=True;TrustServerCertificate=True
+        //(Trung)
+        //(Hoan)    Data Source=LAPTOP-L7BVASSV\MAY1;Initial Catalog=Library;Integrated Security=True;TrustServerCertificate=True
+        //(Van)     Data Source=MSI\MSSQLSERVER02;Initial Catalog=Library;Integrated Security=True
 
-        // Phương thức khởi tạo là private để ngăn tạo đối tượng từ bên ngoài
-        private DataProvider()
+
+        //private string connectionStr = $"Data Source=LAPTOP-M3L0LSMS;Initial Catalog=LibraryReader;User ID={DTO.Session.loginAccount.Email};Password={DTO.Session.loginAccount.MatKhau};TrustServerCertificate=True";
+
+        SqlConnection connection;
+
+        private string GetConnectionString()
         {
-            conn = new SqlConnection(ConnStr);
-            comm = conn.CreateCommand();
+            if (DTO.Session.loginAccount == null)
+            {
+                return @"Data Source=LAPTOP-3EVRR5L8;Initial Catalog=ManageLibrary;Integrated Security=True;TrustServerCertificate=True";
+            }
+
+            return $"Data Source=LAPTOP-3EVRR5L8;Initial Catalog=ManageLibrary;User ID={DTO.Session.loginAccount.Email};Password={DTO.Session.loginAccount.MatKhau};TrustServerCertificate=True";
         }
 
-        public DataTable ExecuteQuery(string query, params object[] parameter)
+
+        public DataTable ExecuteQuery(string query, object[] parameter = null)
         {
             DataTable data = new DataTable();
-            try
+
+            using (connection = new SqlConnection(GetConnectionString()))
             {
-                if (conn.State == ConnectionState.Open)
-                    conn.Close();
-                conn.Open();
-                comm.CommandText = query;
-                comm.CommandType = CommandType.Text;
+                connection.Open();
 
-                // Sử dụng Regex để trích xuất tên các tham số trong query
-                Regex rx = new Regex(@"@\w+");
-                var matches = rx.Matches(query)
-                                .Cast<Match>()
-                                .Select(m => m.Value)
-                                .Distinct()
-                                .ToArray();
+                SqlCommand cmd = new SqlCommand(query, connection);
 
-                // Nếu có tham số truyền vào và tìm được tên tham số trong query
-                if (parameter != null && parameter.Length > 0 && matches.Length > 0)
+                if (parameter != null)
                 {
-                    comm.Parameters.Clear();
-                    if (matches.Length != parameter.Length)
+                    string[] listPara = query.Split(' ');
+                    int i = 0;
+                    foreach (string item in listPara)
                     {
-                        throw new Exception("Số lượng tham số trong query không khớp với số lượng tham số được truyền vào.");
-                    }
-                    for (int i = 0; i < matches.Length; i++)
-                    {
-                        comm.Parameters.AddWithValue(matches[i], parameter[i]);
+                        if (item.Contains("@"))
+                        {
+                            cmd.Parameters.AddWithValue(item, parameter[i]);
+                            i++;
+                        }
                     }
                 }
-                da = new SqlDataAdapter(comm);
-                da.Fill(data);
+
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+
+                adapter.Fill(data);
+
+                connection.Close();
             }
-            catch (Exception ex)
+            return data;
+        }
+        public int ExecuteNonQuery(string query, object[] parameter = null)
+        {
+            int data = 0;
+
+            using (connection = new SqlConnection(GetConnectionString()))
             {
-                // Bạn có thể xử lý hoặc ghi log lỗi tại đây.
-                throw ex;
+                connection.Open();
+
+                SqlCommand cmd = new SqlCommand(query, connection);
+
+                if (parameter != null)
+                {
+                    string[] listPara = query.Split(' ');
+                    int i = 0;
+                    foreach (string item in listPara)
+                    {
+                        if (item.Contains("@"))
+                        {
+                            cmd.Parameters.AddWithValue(item, parameter[i]);
+                            i++;
+                        }
+                    }
+                }
+
+                data = cmd.ExecuteNonQuery();
+
+                connection.Close();
             }
-            finally
+            return data;
+        }
+        public object ExecuteScalar(string query, object[] parameter = null)
+        {
+            object data = 0;
+
+            using (connection = new SqlConnection(GetConnectionString()))
             {
-                conn.Close();
+                connection.Open();
+
+                SqlCommand cmd = new SqlCommand(query, connection);
+
+                if (parameter != null)
+                {
+                    string[] listPara = query.Split(' ');
+                    int i = 0;
+                    foreach (string item in listPara)
+                    {
+                        if (item.Contains("@"))
+                        {
+                            cmd.Parameters.AddWithValue(item, parameter[i]);
+                            i++;
+                        }
+                    }
+                }
+
+                data = cmd.ExecuteScalar();
+
+                connection.Close();
             }
             return data;
         }
 
-        // Nếu cần, bạn có thể cập nhật tương tự cho ExecuteNonQuery và ExecuteScalar
-        public int ExecuteNonQuery(string query, params object[] parameter)
-        {
-            int result = 0;
-            try
-            {
-                if (conn.State == ConnectionState.Open)
-                    conn.Close();
-                conn.Open();
-                comm.CommandText = query;
-                comm.CommandType = CommandType.Text;
-                if (parameter != null && parameter.Length > 0)
-                {
-                    comm.Parameters.Clear();
-
-                    // Dùng cùng cách xử lý như ở ExecuteQuery
-                    Regex rx = new Regex(@"@\w+");
-                    var matches = rx.Matches(query)
-                                    .Cast<Match>()
-                                    .Select(m => m.Value)
-                                    .Distinct()
-                                    .ToArray();
-                    if (matches.Length != parameter.Length)
-                    {
-                        throw new Exception("Số lượng tham số trong query không khớp với số lượng tham số được truyền vào.");
-                    }
-                    for (int i = 0; i < matches.Length; i++)
-                    {
-                        comm.Parameters.AddWithValue(matches[i], parameter[i]);
-                    }
-                }
-                result = comm.ExecuteNonQuery();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-                conn.Close();
-            }
-            return result;
-        }
-
-        public object ExecuteScalar(string query, params object[] parameter)
-        {
-            object data = null;
-            try
-            {
-                if (conn.State == ConnectionState.Open)
-                    conn.Close();
-                conn.Open();
-                comm.CommandText = query;
-                comm.CommandType = CommandType.Text;
-                if (parameter != null && parameter.Length > 0)
-                {
-                    comm.Parameters.Clear();
-                    Regex rx = new Regex(@"@\w+");
-                    var matches = rx.Matches(query)
-                                    .Cast<Match>()
-                                    .Select(m => m.Value)
-                                    .Distinct()
-                                    .ToArray();
-                    if (matches.Length != parameter.Length)
-                    {
-                        throw new Exception("Số lượng tham số trong query không khớp với số lượng tham số được truyền vào.");
-                    }
-                    for (int i = 0; i < matches.Length; i++)
-                    {
-                        comm.Parameters.AddWithValue(matches[i], parameter[i]);
-                    }
-                }
-                data = comm.ExecuteScalar();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-                conn.Close();
-            }
-            return data;
-        }
     }
 }

@@ -89,6 +89,24 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="fQuanLyPhieuMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fQuanLyPhieuMuon.Designer.cs">
+      <DependentUpon>fQuanLyPhieuMuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fReaderDoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fReaderDoiMatKhau.Designer.cs">
+      <DependentUpon>fReaderDoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fReaderHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fReaderHome.Designer.cs">
+      <DependentUpon>fReaderHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="fReaderLichSuMuonSach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +162,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fHome.resx">
       <DependentUpon>fHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fQuanLyPhieuMuon.resx">
+      <DependentUpon>fQuanLyPhieuMuon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fReaderDoiMatKhau.resx">
+      <DependentUpon>fReaderDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fReaderHome.resx">
+      <DependentUpon>fReaderHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fReaderLichSuMuonSach.resx">
       <DependentUpon>fReaderLichSuMuonSach.cs</DependentUpon>
